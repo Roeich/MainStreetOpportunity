@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Street Opportunity - AI for Small Businesses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- header navigation -->
+    <header class="fixed top-0 z-50 bg-opacity-70 backdrop-blur-md bg-black w-full py-4">
+        <div class="container px-4 mx-auto">
+            <nav class="flex justify-between items-center ">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-white">
+                        <span class="gradient-text">Main</span>Street
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex space-x-6 items-center">
+                    <a href="#solutions" class="text-gray-300 hover:text-white transition duration-300">Solutions</a>
+                    <a href="#how-it-works" class="text-gray-300 hover:text-white transition duration-300">How It Works</a>
+                    <a href="#case-studies" class="text-gray-300 hover:text-white transition duration-300">Success Stories</a>
+                    <a href="#partners" class="text-gray-300 hover:text-white transition duration-300">Partners</a>
+                    <a class="cta-button ml-6" href="sms:+14809130641">
+                        <i class="fas fa-sms mr-2"></i>
+                        Text Alli 480-913-0641
+                    </a>
+                </div>
+                
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-black z_1000 transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="flex justify-between py-4 px-6 md:px-12">
+            <div class="text-2xl font-bold text-white">
+                <span class="gradient-text">Main</span>Street
+            </div>
+            <button id="close-menu-button" class="text-white">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <div class="flex flex-col items-center space-y-8 mt-20">
+            <a href="#solutions" class="text-gray-300 hover:text-white transition duration-300 text-xl">Solutions</a>
+            <a href="#how-it-works" class="text-gray-300 hover:text-white transition duration-300 text-xl">How It Works</a>
+            <a href="#case-studies" class="text-gray-300 hover:text-white transition duration-300 text-xl">Success Stories</a>
+            <a href="#partners" class="text-gray-300 hover:text-white transition duration-300 text-xl">Partners</a>
+            <a class="cta-button mt-8" href="sms:+14809130641">
+                <i class="fas fa-sms mr-2"></i>
+                Text Alli 480-913-0641
+            </a>
+        </div>
+    </div>
+    
+    <main class="main">
+        <!-- Hero Section -->
+        <div id="particles-js" class="particles-js"></div>
+        <section class="xl:min-h-screen flex items-center relative overflow-hidden pt-28 lg:pt-40 pb-20">
+            <div class="blob top-0 left-1/4 transform -translate-x-1/2"></div>
+            <div class="blob bottom-0 right-1/4 transform translate-x-1/2"></div>
+            
+            <div class="container px-4 mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="z-10">
+                        <h1 class="text-5xl xl:text-6xl font-bold leading-tight">
+                            <span id="typed-text"></span>
+                        </h1>
+                        <p class="mt-6 text-xl text-gray-300 leading-relaxed">Smart marketing and digital workforce solutions designed by small business owners for small business owners</p>
+                        
+                        <p class="mt-4 text-yellow-400 text-sm italic">While you read this, your competitors are already automating</p>
+                        
+                        <div class="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a class="cta-button glow flex items-center justify-center" href="sms:+14809130641">
+                                <i class="fas fa-sms mr-2"></i>
+                                Text Alli at 480-913-0641
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="relative z-10">
+                        <div class="floating-slow">
+                            <div class="relative">
+                                <div class="relative z-10 w-full">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="absolute -top-16 -left-10 w-16 h-16 floating-fast opacity-60" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="absolute top-20 -right-10 w-14 h-14 floating opacity-60" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="absolute bottom-10 left-10 w-12 h-12 floating-fast opacity-60" />
+                                    
+                                    <div class="card p-4 sm:p-8 rounded-2xl relative overflow-hidden">
+                                        <div class="flex items-center mb-6">
+                                            <div class="w-16 min-w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mr-4">
+                                                <i class="fas fa-robot text-white text-2xl"></i>
+                                            </div>
+                                            <div>
+                                                <h3 class="text-xl font-semibold">Meet Alli</h3>
+                                                <p class="text-gray-400">Your AI Business Assistant</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="rounded-xl bg-gray-900 bg-opacity-50 p-4 mb-6">
+                                            <div class="flex items-center">
+                                                <div class="w-10 min-w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center mr-3">
+                                                    <i class="fas fa-calendar-check text-white"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="text-sm text-gray-400">Monday</div>
+                                                    <div class="text-white">4 appointments scheduled</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="rounded-xl bg-gray-900 bg-opacity-50 p-4 mb-6">
+                                            <div class="flex items-center">
+                                                <div class="w-10 min-w-10 h-10 rounded-full bg-gradient-to-br from-red-400 to-purple-500 flex items-center justify-center mr-3">
+                                                    <i class="fas fa-chart-line text-white"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="text-sm text-gray-400">Leads</div>
+                                                    <div class="text-white">12 new leads this week</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="rounded-xl bg-gray-900 bg-opacity-50 p-4">
+                                            <div class="flex items-center">
+                                                <div class="w-10 min-w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center mr-3">
+                                                    <i class="fas fa-comments text-white"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="text-sm text-gray-400">Marketing</div>
+                                                    <div class="text-white">Social media posts scheduled</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full -z-10">
+                                    <div class="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 rounded-full opacity-20 blur-3xl"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pain Points Section -->
+        <section id="pain-points" class="py-20 relative">
+            <div class="wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            
+            <div class="container px-4 mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Small Business <span class="gradient-text">Pain Points</span></h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">Running a small business means wearing too many hats. What if you could focus on what you do best?</p>
+                    <p class="text-yellow-400 text-sm italic mt-2">What if your business could run itself while you focus on what matters?</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 xl:gap-8">
+                    <div class="card p-6 2xl:p-8 rounded-2xl text-center relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-business-time text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Too busy working IN your business</h3>
+                        <p class="text-gray-300">You're handling day-to-day operations instead of strategic growth. There's never enough time to work ON your business.</p>
+                    </div>
+                    
+                    <div class="card p-6 2xl:p-8 rounded-2xl text-center relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-bullhorn text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Marketing feels like a full-time job</h3>
+                        <p class="text-gray-300">Keeping up with social media, email campaigns, and advertising is overwhelming when you're already stretched thin.</p>
+                    </div>
+                    
+                    <div class="card p-6 2xl:p-8 rounded-2xl text-center relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-green-500 to-teal-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-rocket text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Technology moves too fast</h3>
+                        <p class="text-gray-300">With AI, marketing tools, and platforms constantly evolving, it's impossible to stay current while running your business.</p>
+                    </div>
+                    
+                    <div class="card p-6 2xl:p-8 rounded-2xl text-center relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-yellow-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-users text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Growth means more overhead</h3>
+                        <p class="text-gray-300">Hiring employees means more expenses, training, management, and paperwork—eating into your profits and time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Digital Workforce Section -->
+        <section id="solutions" class="py-20 relative">
+            <div class="blob top-0 right-1/4 transform translate-x-1/2"></div>
+            
+            <div class="container px-4 mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Your <span class="gradient-text">Digital Workforce</span></h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">AI workers that handle day-to-day tasks so you can focus on growing your business</p>
+                    <p class="text-yellow-400 text-sm italic mt-2">Replace overhead, not people - augment your team with AI</p>
+                </div>
+                
+                <div class="flex justify-center mb-12">
+                    <div class="inline-flex rounded-md shadow-sm" role="group">
+                        <button id="front-office-tab" class="py-3 px-6 text-sm font-medium rounded-l-lg bg-gray-800 text-white hover:bg-gray-700 focus:z-10 focus:ring-2 focus:ring-blue-500 active">
+                            Front Office
+                        </button>
+                        <button id="back-office-tab" class="py-3 px-6 text-sm font-medium rounded-r-lg bg-gray-900 text-gray-300 hover:bg-gray-700 hover:text-white focus:z-10 focus:ring-2 focus:ring-blue-500">
+                            Back Office
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="front-office-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-8">
+                        <div class="role-card card p-8 rounded-2xl relative overflow-hidden">
+                            <div class="role-icon">
+                                <i class="fas fa-headset text-blue-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">AI Receptionist</h3>
+                            <p class="text-gray-300 mb-4">Handles incoming messages, qualifies leads, and routes inquiries to the right place—24/7 without breaks or salary.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Immediate response to every inquiry</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Appointment scheduling & reminders</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">FAQ handling & information collection</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="role-card card p-8 rounded-2xl relative overflow-hidden">
+                            <div class="role-icon">
+                                <i class="fas fa-hashtag text-purple-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">Social Media Manager</h3>
+                            <p class="text-gray-300 mb-4">Creates, schedules, and manages your social media presence across platforms to build your brand consistently.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Content creation & scheduling</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Engagement monitoring & responses</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Trend analysis & hashtag optimization</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="role-card card p-8 rounded-2xl relative overflow-hidden">
+                            <div class="role-icon">
+                                <i class="fas fa-user-tie text-pink-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">Sales Assistant</h3>
+                            <p class="text-gray-300 mb-4">Nurtures leads through the sales process, handles objections, and converts prospects into paying customers.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Lead qualification & nurturing</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Follow-up messaging automation</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Proposal & quote generation</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="back-office-content" class="hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="role-card card p-8 rounded-2xl relative overflow-hidden">
+                            <div class="role-icon">
+                                <i class="fas fa-calculator text-green-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">Bookkeeper</h3>
+                            <p class="text-gray-300 mb-4">Tracks expenses, categorizes transactions, and prepares financial reports to keep your finances in order.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Receipt processing & categorization</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Invoice generation & tracking</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Financial reporting & insights</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="role-card card p-8 rounded-2xl relative overflow-hidden">
+                            <div class="role-icon">
+                                <i class="fas fa-calendar-alt text-orange-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">Scheduler</h3>
+                            <p class="text-gray-300 mb-4">Manages your calendar, schedules appointments, and sends reminders to keep your day running smoothly.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Intelligent calendar management</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Automated reminders & follow-ups</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Resource allocation optimization</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="role-card card p-8 rounded-2xl relative overflow-hidden">
+                            <div class="role-icon">
+                                <i class="fas fa-life-ring text-red-400"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">Customer Service Rep</h3>
+                            <p class="text-gray-300 mb-4">Responds to customer inquiries, resolves issues, and ensures customer satisfaction around the clock.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">24/7 customer support availability</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Common issue resolution</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-400 mr-2"></i>
+                                    <span class="text-gray-300">Escalation for complex cases</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SMS Marketing Showcase -->
+        <section class="py-20 relative bg-gray-900">
+            <div class="container px-4 mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">SMS Marketing that <span class="gradient-text">Actually Works</span></h2>
+                        <p class="text-xl text-gray-300 mb-6">Engage customers where they actually pay attention - their text messages.</p>
+                        <p class="text-yellow-400 text-sm italic mb-8">Every unopened email is a missed opportunity - texts get read 98% of the time</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                    <i class="fas fa-comment-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold mb-2">Instant Engagement</h3>
+                                    <p class="text-gray-300">Our AI responds to incoming messages within seconds, qualifying leads while they're still interested.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                    <i class="fas fa-brain text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold mb-2">AI Conversation Management</h3>
+                                    <p class="text-gray-300">Natural conversations that qualify leads, answer questions, and guide prospects through your sales process.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                    <i class="fas fa-clipboard-check text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold mb-2">Automated Follow-ups</h3>
+                                    <p class="text-gray-300">Never miss a potential customer with perfectly timed follow-up messages based on their behavior.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <div class="card p-6 rounded-2xl max-w-full w-md mx-auto">
+                            <div class="flex items-center border-b border-gray-700 pb-4 mb-4">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center mr-3">
+                                    <i class="fas fa-user text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold">Customer Journey</h3>
+                                    <p class="text-sm text-gray-400">Live conversation</p>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4 mb-4">
+                                <div class="message-bubble message-received">
+                                    <p>Hi! I'm interested in your services. Do you handle social media marketing for small businesses?</p>
+                                    <span class="text-xs text-gray-500 block mt-1">10:05 AM</span>
+                                </div>
+                                
+                                <div class="message-bubble message-sent">
+                                    <p>Hi there! 👋 Yes, we specialize in social media marketing for small businesses. I'd be happy to discuss how we can help grow your online presence. What type of business do you have?</p>
+                                    <span class="text-xs text-gray-500 block mt-1">10:05 AM</span>
+                                </div>
+                                
+                                <div class="message-bubble message-received">
+                                    <p>I run a small plumbing business. We're doing okay with word of mouth, but I know we need to be more visible online.</p>
+                                    <span class="text-xs text-gray-500 block mt-1">10:07 AM</span>
+                                </div>
+                                
+                                <div class="message-bubble message-sent">
+                                    <p>Perfect! For plumbing businesses, we've seen great success with targeted local social media campaigns. Would you be interested in learning about our service packages specifically designed for home service businesses?</p>
+                                    <span class="text-xs text-gray-500 block mt-1">10:08 AM</span>
+                                </div>
+                                
+                                <div class="message-bubble message-received">
+                                    <p>Yes, that sounds good. What's involved and how much does it cost?</p>
+                                    <span class="text-xs text-gray-500 block mt-1">10:10 AM</span>
+                                </div>
+                                
+                                <div class="animate-pulse flex items-center space-x-2 ml-2">
+                                    <div class="h-2 w-2 bg-gray-400 rounded-full"></div>
+                                    <div class="h-2 w-2 bg-gray-400 rounded-full"></div>
+                                    <div class="h-2 w-2 bg-gray-400 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute -top-6 -left-6 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center floating-fast">
+                            <i class="fas fa-mobile-alt text-white text-xl"></i>
+                        </div>
+                        
+                        <div class="absolute -bottom-6 -right-6 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center floating">
+                            <i class="fas fa-check text-white text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Partner Ecosystem Section -->
+        <section id="partners" class="py-20 relative">
+            <div class="blob bottom-0 left-1/4 transform -translate-x-1/2"></div>
+            
+            <div class="container px-4 mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="gradient-text">Partner Ecosystem</span></h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">A powerful network of integrated AI solutions working together to supercharge your business growth</p>
+                    <p class="text-yellow-400 text-sm italic mt-2">Why settle for one solution when you can have an entire ecosystem?</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-8">
+                    <div class="partner-card relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-gradient-to-bl from-blue-500 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                            PARTNER
+                        </div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-atom text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">QuantumOS.ai</h3>
+                        <p class="text-gray-300 mb-6">AI Co-Pilot that generates leads and processes AI workflows for small businesses.</p>
+                        
+                        <h4 class="text-blue-400 font-medium mb-2">Integration Benefits:</h4>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                                <span class="text-gray-300">AI-powered workflow automation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                                <span class="text-gray-300">Business process optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                                <span class="text-gray-300">Front and back office AI agents</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="https://quantumos.ai" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors flex items-center">
+                            Learn more
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="partner-card relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-gradient-to-bl from-blue-500 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                            FEATURED
+                        </div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-blue-600 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-store text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Main Street Opportunity</h3>
+                        <p class="text-gray-300 mb-6">Smart marketing and digital workforce solutions designed by small business owners for small business owners.</p>
+                        
+                        <h4 class="text-blue-400 font-medium mb-2">Core Services:</h4>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                                <span class="text-gray-300">SMS marketing & lead generation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                                <span class="text-gray-300">Digital workforce deployment</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                                <span class="text-gray-300">Complete business automation</span>
+                            </li>
+                        </ul>
+                        
+                        <span class="text-blue-400 font-medium">You are here</span>
+                    </div>
+                    
+                    <div class="partner-card relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-gradient-to-bl from-blue-500 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                            PARTNER
+                        </div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-comment-dots text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">TextPert.net</h3>
+                        <p class="text-gray-300 mb-6">SMS-based platform connecting consumers with service providers through AI-powered conversations.</p>
+                        
+                        <h4 class="text-blue-400 font-medium mb-2">Integration Benefits:</h4>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                                <span class="text-gray-300">Expanded lead generation network</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                                <span class="text-gray-300">Enhanced customer communication</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                                <span class="text-gray-300">Specialized service matching</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="https://textpert.net" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors flex items-center">
+                            Learn more
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mt-16 flex justify-center">
+                    <div class="card p-8 rounded-2xl max-w-3xl relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-600/10 rounded-2xl"></div>
+                        <h3 class="text-2xl font-semibold mb-4 text-center">Seamless Integration</h3>
+                        <p class="text-gray-300 text-center mb-8">Our partner ecosystem works together as a unified solution, giving you the power of multiple AI platforms without the complexity.</p>
+                        
+                        <div class="flex flex-col md:flex-row items-center justify-center">
+                            <div class="text-center px-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                                    <i class="fas fa-atom text-white text-2xl"></i>
+                                </div>
+                                <p class="text-sm text-gray-300">QuantumOS.ai</p>
+                            </div>
+                            
+                            <div class="hidden md:block">
+                                <i class="fas fa-exchange-alt text-blue-400 mx-4"></i>
+                            </div>
+                            
+                            <div class="text-center px-4 my-4 md:my-0">
+                                <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                                    <i class="fas fa-store text-white text-2xl"></i>
+                                </div>
+                                <p class="text-sm text-gray-300">Main Street</p>
+                            </div>
+                            
+                            <div class="hidden md:block">
+                                <i class="fas fa-exchange-alt text-blue-400 mx-4"></i>
+                            </div>
+                            
+                            <div class="text-center px-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                                    <i class="fas fa-comment-dots text-white text-2xl"></i>
+                                </div>
+                                <p class="text-sm text-gray-300">TextPert.net</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20 relative bg-gray-900">
+            <div class="container px-4 mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">How It <span class="gradient-text">Works</span></h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">Four simple steps to transform your business operations and marketing</p>
+                    <p class="text-yellow-400 text-sm italic mt-2">Nothing to learn, no time investment needed</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="card p-6 rounded-2xl text-center h-full">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500/30 to-purple-600/30 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-comment-alt text-blue-400 text-3xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-3">Text Alli</h3>
+                            <p class="text-gray-300">Start a conversation with our AI to discuss your business needs and challenges.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="card p-6 rounded-2xl text-center h-full">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500/30 to-pink-600/30 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-lightbulb text-purple-400 text-3xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-3">Get Your Strategy</h3>
+                            <p class="text-gray-300">Receive a customized automation and marketing strategy tailored to your business.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="card p-6 rounded-2xl text-center h-full">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-green-500/30 to-blue-600/30 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-cogs text-green-400 text-3xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-3">We Implement Everything</h3>
+                            <p class="text-gray-300">Our team sets up your entire system while you focus on running your business.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="card p-6 rounded-2xl text-center h-full">
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-yellow-500/30 to-red-600/30 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-chart-line text-yellow-400 text-3xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-3">Watch Your Business Grow</h3>
+                            <p class="text-gray-300">Enjoy more free time and increased revenue as your business runs more efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-16 flex justify-center">
+                    <div class="card p-8 rounded-2xl max-w-2xl text-center">
+                        <h3 class="text-2xl font-semibold mb-4">Ready to get started?</h3>
+                        <p class="text-gray-300 mb-8">Take the first step toward automating your business and freeing up your time.</p>
+                        <a class="cta-button glow mx-auto" href="sms:+14809130641">
+                            <i class="fas fa-sms mr-2"></i>
+                            Text Alli at 480-913-0641
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Case Studies Section -->
+        <section id="case-studies" class="py-20 relative">
+            <div class="blob top-0 right-1/2 transform translate-x-1/2"></div>
+            
+            <div class="container px-4 mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Success <span class="gradient-text">Stories</span></h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">Real businesses achieving real results with our AI solutions</p>
+                    <p class="text-yellow-400 text-sm italic mt-2">These businesses were once where you are now</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="card flex flex-col h-full p-6 md:p-8 rounded-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-gradient-to-bl from-blue-500 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                            HOME SERVICES
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-tools text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Johnson Plumbing</h3>
+                                <p class="text-gray-400">Phoenix, AZ</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <p class="text-gray-300 italic mb-4">"I was spending all my evenings doing paperwork and trying to follow up with leads. Now my AI assistant handles all that, and I can focus on the actual plumbing work. My business has grown 40% without adding any staff."</p>
+                            <p class="text-white font-medium">- Mike Johnson, Owner</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="stats-card">
+                                <p class="stats-number">40%</p>
+                                <p class="stats-label">Revenue Growth</p>
+                            </div>
+                            <div class="stats-card">
+                                <p class="stats-number">15</p>
+                                <p class="stats-label">Hours Saved Weekly</p>
+                            </div>
+                        </div>
+                        <div class="mt-auto">
+                            <button class="secondary-button w-full">View Full Case Study</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card flex flex-col h-full p-6 md:p-8 rounded-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-gradient-to-bl from-green-500 to-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                            WELLNESS
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-blue-600 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-spa text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Serenity Yoga Studio</h3>
+                                <p class="text-gray-400">Scottsdale, AZ</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <p class="text-gray-300 italic mb-4">"The SMS marketing system has completely transformed our class attendance. We're filling sessions that used to be half-empty, and the AI handles all the reminders and rescheduling automatically."</p>
+                            <p class="text-white font-medium">- Sarah Chen, Studio Manager</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="stats-card">
+                                <p class="stats-number">85%</p>
+                                <p class="stats-label">Class Fill Rate</p>
+                            </div>
+                            <div class="stats-card">
+                                <p class="stats-number">64%</p>
+                                <p class="stats-label">Fewer No-Shows</p>
+                            </div>
+                        </div>
+                        <div class="mt-auto">
+                            <button class="secondary-button w-full">View Full Case Study</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card flex flex-col h-full p-6 md:p-8 rounded-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-gradient-to-bl from-purple-500 to-pink-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                            PROFESSIONAL SERVICES
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-briefcase text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Peterson Accounting</h3>
+                                <p class="text-gray-400">Mesa, AZ</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <p class="text-gray-300 italic mb-4">"Our digital workforce handles client intake, appointment scheduling, and basic bookkeeping tasks. We've been able to take on 30% more clients without hiring additional staff."</p>
+                            <p class="text-white font-medium">- David Peterson, CPA</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="stats-card">
+                                <p class="stats-number">30%</p>
+                                <p class="stats-label">More Clients</p>
+                            </div>
+                            <div class="stats-card">
+                                <p class="stats-number">22</p>
+                                <p class="stats-label">Hours Saved Weekly</p>
+                            </div>
+                        </div>
+                        <div class="mt-auto">
+                            <button class="secondary-button w-full">View Full Case Study</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- AI Features Section -->
+        <section class="py-20 relative bg-gray-900">
+            <div class="container px-4 mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">AI <span class="gradient-text">Features</span></h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">Cutting-edge technology designed to make running your business easier</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card p-8 rounded-2xl relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-chart-network text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Lead Generation</h3>
+                        <p class="text-gray-300 mb-6">AI-powered SMS campaigns that capture and qualify leads automatically, 24/7.</p>
+                        <p class="text-yellow-400 text-sm italic">The leads you miss today are your competitor's customers tomorrow</p>
+                    </div>
+                    
+                    <div class="card p-8 rounded-2xl relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-bullhorn text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Marketing Automation</h3>
+                        <p class="text-gray-300 mb-6">Automated campaigns across email, SMS, and social media that engage your audience consistently.</p>
+                        <p class="text-yellow-400 text-sm italic">Marketing is a game of consistency—automation never takes a day off</p>
+                    </div>
+                    
+                    <div class="card p-8 rounded-2xl relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-green-500 to-teal-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-hashtag text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Social Media Management</h3>
+                        <p class="text-gray-300 mb-6">AI content creation and scheduling across all platforms to keep your brand visible and engaging.</p>
+                        <p class="text-yellow-400 text-sm italic">In today's digital world, silence equals invisibility</p>
+                    </div>
+                    
+                    <div class="card p-8 rounded-2xl relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-yellow-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-yellow-600 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-users text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Customer Relationship Management</h3>
+                        <p class="text-gray-300 mb-6">Intelligent customer data management and automated follow-ups to nurture relationships.</p>
+                        <p class="text-yellow-400 text-sm italic">Every forgotten follow-up is money left on the table</p>
+                    </div>
+                    
+                    <div class="card p-8 rounded-2xl relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-green-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-green-600 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-calendar-check text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Appointment Scheduling</h3>
+                        <p class="text-gray-300 mb-6">Automated booking, confirmations, and reminders to eliminate no-shows and scheduling gaps.</p>
+                        <p class="text-yellow-400 text-sm italic">Your time is your inventory—every empty slot is revenue lost forever</p>
+                    </div>
+                    
+                    <div class="card p-8 rounded-2xl relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-500 to-blue-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-600 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-chart-bar text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Business Analytics</h3>
+                        <p class="text-gray-300 mb-6">Real-time insights and reporting to help you make data-driven decisions for your business.</p>
+                        <p class="text-yellow-400 text-sm italic">What gets measured gets improved—see your business with new clarity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="py-20 relative">
+            <div class="blob bottom-0 right-1/2 transform translate-x-1/2"></div>
+            
+            <div class="container px-4 mx-auto">
+                <div class="card p-8 md:p-12 rounded-2xl relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-600/20"></div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+                        <div>
+                            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
+                            <p class="text-xl text-gray-300 mb-8">Start the conversation that will change how you run your business forever.</p>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 text-xl mr-4"></i>
+                                    <p class="text-gray-300">No complicated software to learn</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 text-xl mr-4"></i>
+                                    <p class="text-gray-300">We handle all the setup and implementation</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 text-xl mr-4"></i>
+                                    <p class="text-gray-300">Start seeing results in days, not months</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 text-xl mr-4"></i>
+                                    <p class="text-gray-300">Tailored to your specific business needs</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <p class="text-yellow-400 text-sm italic mb-4">Start the conversation that will transform your business</p>
+                                <a class="cta-button glow" href="sms:+14809130641">
+                                    <i class="fas fa-sms mr-2"></i>
+                                    Text Alli at 480-913-0641
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="relative">
+                            <div class="card p-6 rounded-2xl bg-gray-900 max-w-full w-md mx-auto floating-slow">
+                                <div class="flex items-center border-b border-gray-700 pb-4 mb-4">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center mr-3">
+                                        <i class="fas fa-robot text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold">Alli</h3>
+                                        <p class="text-sm text-gray-400">AI Business Assistant</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-y-4">
+                                    <div class="message-bubble message-received">
+                                        <p>Hi there! I'm Alli, your AI business assistant from Main Street Opportunity. How can I help your business today?</p>
+                                    </div>
+                                    
+                                    <div class="flex justify-center items-center mt-8">
+                                        <div class="relative">
+                                            <input type="text" placeholder="Text Alli at 480-913-0641" class="bg-gray-800 text-white py-3 px-4 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500" disabled />
+                                            <div class="absolute inset-0 bg-gradient-to-r from-transparent to-gray-800 flex items-center justify-end px-4">
+                                                <i class="fas fa-arrow-circle-right text-blue-400 text-xl"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="absolute -top-6 -left-6 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center floating-fast">
+                                <i class="fas fa-comments text-white text-xl"></i>
+                            </div>
+                            
+                            <div class="absolute -bottom-6 -right-6 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center floating">
+                                <i class="fas fa-lightbulb text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-900">
+        <div class="container px-4 mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-white mb-4">
+                        <span class="gradient-text">Main</span>Street
+                    </div>
+                    <p class="text-gray-400 mb-4">Smart marketing and digital workforce solutions designed by small business owners for small business owners.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Solutions</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">SMS Marketing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Digital Workforce</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Social Media Management</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Lead Generation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Business Automation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Partners</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a class="flex items-start" href="https://maps.app.goo.gl/S5toY5hjJduiY8mf9" target="_blank">
+                                <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-3"></i>
+                                <span class="text-gray-400">15201 N Cave Creek Rd, Suite B<br>Phoenix, AZ 85032</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center" href="tel:+4809130641">
+                                <i class="fas fa-phone-alt text-blue-400 mr-3"></i>
+                                <span class="text-gray-400">480-913-0641</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center" href="mailto:info@mainstreetopportunity.com">
+                                <i class="fas fa-envelope text-blue-400 mr-3"></i>
+                                <span class="text-gray-400 break-all">info@mainstreetopportunity.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Main Street Opportunity. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.144.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
