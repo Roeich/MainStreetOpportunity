@@ -203,5 +203,8 @@ document.addEventListener('DOMContentLoaded', function() {
     animateOnScroll(); // Initial check
     
     // initialize on scroll animation 
-    AOS.init();
+    AOS.init({
+        duration: 900
+    });
+    
 });
