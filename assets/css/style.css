@@ -17,7 +17,41 @@ body {
 .z_1000{
     z-index: 1000;
 }
-
+.navbar>.nav_item{
+    padding: 0.8rem 0.5rem;
+    position: relative;
+}
+.nav_link{
+    cursor: pointer;
+    color: #ffffff;
+}
+.nav_link:hover{
+    color:#8338ec;
+}
+.sub_navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: max-content;
+    background-color: #090c10;
+    transform: translateY(10px);
+    transition: 0.3s;
+    opacity: 0;
+    pointer-events: none;
+}
+.nav_item:hover>.sub_navbar,
+.nav_item:active>.sub_navbar{
+    transform: translateY(0px);
+    opacity: 1;
+    pointer-events: initial;
+}
+.sub_navbar .nav_link{
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.sub_navbar .nav_link:hover{
+    background-color: #1e2835;
+}
 .main{
     max-width: 100vw;
     overflow: hidden;
