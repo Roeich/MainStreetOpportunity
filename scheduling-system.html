@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Street Opportunity - AI for Small Businesses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- ______________ start header area ______________ -->
+    <!-- header -->
+    <header class="fixed top-0 z-50 bg-opacity-70 backdrop-blur-md bg-black w-full py-4">
+        <div class="container px-4 mx-auto">
+            <nav class="flex justify-between items-center ">
+                <div class="flex items-center">
+                    <a class="text-2xl font-bold text-white" href="index.html">
+                        <span class="gradient-text">Main</span>Street
+                    </a>
+                </div>
+                <ul class="navbar hidden lg:flex gap-x-4 items-center pl-20">
+                    <li class="nav_item sub_navbar_wrap">
+                        <a class="nav_link" href="solutions.html">Solutions</a>
+                        <ul class="sub_navbar">
+                            <li class="nav_item">
+                                <a class="nav_link" href="sms-marketing.html">SMS Marketing</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="digital-workforce.html">Digital Workforce</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="social-media-management.html">Social Media Management</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="lead-generation.html">Lead Generation</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="business-automation.html">Business Automation</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="call-management.html">Call Management</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="email-management.html">Email Management</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="crm-management.html">CRM Management</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="scheduling-system.html">Scheduling System </a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="workflow-automation.html">Workflow Automation</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="transaction-coordination.html">Transaction Coordination</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav_item lg:hidden">
+                        <a class="cta-button" href="sms:+14809130641">
+                            <i class="fas fa-sms mr-2"></i> Text Alli 480-913-0641
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="hidden lg:block">
+                    <a class="cta-button" href="sms:+14809130641">
+                        <i class="fas fa-sms mr-2"></i> Text Alli 480-913-0641
+                    </a>
+                </div>
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-black z_1000 transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="flex justify-between py-4 px-6 md:px-12">
+            <div class="text-2xl font-bold text-white">
+                <span class="gradient-text">Main</span>Street
+            </div>
+            <button id="close-menu-button" class="text-white">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <ul class="navbar flex flex-col gap-x-6 items-center">
+            <li class="nav_item sub_navbar_wrap">
+                <div class="nav_link">Solutions</div>
+                <ul class="sub_navbar">
+                    <li class="nav_item">
+                        <a class="nav_link" href="sms-marketing.html">SMS Marketing</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="digital-workforce.html">Digital Workforce</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="social-media-management.html">Social Media Management</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="lead-generation.html">Lead Generation</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="business-automation.html">Business Automation</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="call-management.html">Call Management</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="email-management.html">Email Management</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="crm-management.html">CRM Management</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="scheduling-system.html">Scheduling System </a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="workflow-automation.html">Workflow Automation</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="transaction-coordination.html">Transaction Coordination</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav_item lg:hidden">
+                <a class="cta-button" href="sms:+14809130641">
+                    <i class="fas fa-sms mr-2"></i> Text Alli 480-913-0641
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- ______________ end header area ______________ -->
+
+    <!-- ______________ start main area ______________ -->
+    <main class="main">
+        <!-- Overview Section -->
+        <section class="pt-24 lg:pt-32 py-16">
+            <div class="container px-4 mx-auto">
+                <div class="card p-6 lg:p-8 rounded-2xl">
+                    <h2 class="text-3xl font-bold mb-6">Overview</h2>
+                    <div class="flex flex-col lg:flex-row gap-10 lg:items-center">
+                        <div class="lg:w-1/2">
+                            <p class="text-lg mb-6">
+                                Our Scheduling system revolutionizes how real estate professionals manage appointments with leads from marketing campaigns. No more back-and-forth emails or missed opportunities.
+                            </p>
+                            <p class="text-lg mb-6">
+                                With instant appointment booking capabilities, interested leads can immediately secure time on your calendar when they're most engaged with your marketing materials.
+                            </p>
+                            <div class="flex items-center text-gray-300 mb-4">
+                                <i class="fas fa-check-circle text-green-500 mr-3 text-xl"></i>
+                                <p>Automated 24/7 appointment scheduling</p>
+                            </div>
+                            <div class="flex items-center text-gray-300 mb-4">
+                                <i class="fas fa-check-circle text-green-500 mr-3 text-xl"></i>
+                                <p>Seamless calendar integration</p>
+                            </div>
+                            <div class="flex items-center text-gray-300 mb-4">
+                                <i class="fas fa-check-circle text-green-500 mr-3 text-xl"></i>
+                                <p>Customizable availability settings</p>
+                            </div>
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-check-circle text-green-500 mr-3 text-xl"></i>
+                                <p>Automated reminders and follow-ups</p>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 floating">
+                            <div class="relative" data-aos="zoom-out">
+                                <div class="absolute -top-6 -left-6 w-16 h-16 bg-indigo-100 bg-opacity-10 rounded-full"></div>
+                                <div class="absolute -bottom-6 -right-6 w-20 h-20 bg-purple-100 bg-opacity-10 rounded-full"></div>
+                                <div class="bg-gray-900 bg-opacity-70 rounded-xl shadow-xl p-6 relative">
+                                    <div class="flex justify-between items-center mb-4 pb-4 border-b border-gray-100">
+                                        <h3 class="font-bold text-xl">Book Your Appointment</h3>
+                                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Available</span>
+                                    </div>
+                                    <div class="grid grid-cols-5 gap-2 mb-6">
+                                        <div class="text-center p-2 rounded-lg bg-gray-800">Mon</div>
+                                        <div class="text-center p-2 rounded-lg bg-gray-700">Tue</div>
+                                        <div class="text-center p-2 rounded-lg bg-gray-700">Wed</div>
+                                        <div class="text-center p-2 rounded-lg bg-gray-700">Thu</div>
+                                        <div class="text-center p-2 rounded-lg bg-gray-800">Fri</div>
+                                    </div>
+                                    <div class="grid grid-cols-3 gap-2 mb-6">
+                                        <div class="text-center p-2 rounded-lg bg-gray-700">9:00 AM</div>
+                                        <div class="text-center p-2 rounded-lg bg-gray-700">10:30 AM</div>
+                                        <div class="text-center p-2 rounded-lg bg-gray-800 font-medium">1:00 PM</div>
+                                    </div>
+                                    <button class="gradient-bg text-white px-8 py-3 rounded-xl shadow-lg hover:opacity-90 transition w-full">Confirm Appointment</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="py-16">
+            <div class="container px-4 mx-auto">
+                <h2 class="text-3xl font-bold mb-8">How It Works</h2>
+                <div class="card p-6 lg:p-8 rounded-2xl">
+                    <div class="flex flex-col items-center">
+                        <!-- Step 1 -->
+                        <div class="flex flex-col md:flex-row w-full items-center mb-8" data-aos="fade-left" data-aos-delay="100">
+                            <div class="md:w-1/4 flex justify-center">
+                                <div class="w-16 min-w-16 h-16 rounded-full bg-indigo-100 bg-opacity-10 flex items-center justify-center text-2xl font-bold text-indigo-600 mb-4 md:mb-0">1</div>
+                            </div>
+                            <div class="md:w-3/4">
+                                <h3 class="text-xl font-semibold mb-2">Lead Engagement</h3>
+                                <p class="text-gray-300">Prospects engage with your marketing materials (website, landing page, email, or ad) and indicate interest in your services.</p>
+                            </div>
+                        </div>
+
+                        <!-- Connector -->
+                        <div class="step-connector w-1 md:w-3/4 h-10 md:h-1 my-2"></div>
+
+                        <!-- Step 2 -->
+                        <div class="flex flex-col md:flex-row w-full items-center mb-8" data-aos="fade-left" data-aos-delay="100">
+                            <div class="md:w-1/4 flex justify-center">
+                                <div class="w-16 min-w-16 h-16 rounded-full bg-indigo-100 bg-opacity-10 flex items-center justify-center text-2xl font-bold text-indigo-600 mb-4 md:mb-0">2</div>
+                            </div>
+                            <div class="md:w-3/4">
+                                <h3 class="text-xl font-semibold mb-2">Scheduling Widget Activation</h3>
+                                <p class="text-gray-300">Our system presents them with an intelligent booking interface that displays your available time slots based on your preferences and current calendar.</p>
+                            </div>
+                        </div>
+
+                        <!-- Connector -->
+                        <div class="step-connector w-1 md:w-3/4 h-10 md:h-1 my-2"></div>
+
+                        <!-- Step 3 -->
+                        <div class="flex flex-col md:flex-row w-full items-center mb-8" data-aos="fade-left" data-aos-delay="100">
+                            <div class="md:w-1/4 flex justify-center">
+                                <div class="w-16 min-w-16 h-16 rounded-full bg-indigo-100 bg-opacity-10 flex items-center justify-center text-2xl font-bold text-indigo-600 mb-4 md:mb-0">3</div>
+                            </div>
+                            <div class="md:w-3/4">
+                                <h3 class="text-xl font-semibold mb-2">Instant Confirmation</h3>
+                                <p class="text-gray-300">The lead selects a convenient time, enters their information, and instantly receives confirmation with meeting details.</p>
+                            </div>
+                        </div>
+
+                        <!-- Connector -->
+                        <div class="step-connector w-1 md:w-3/4 h-10 md:h-1 my-2"></div>
+
+                        <!-- Step 4 -->
+                        <div class="flex flex-col md:flex-row w-full items-center mb-8" data-aos="fade-left" data-aos-delay="100">
+                            <div class="md:w-1/4 flex justify-center">
+                                <div class="w-16 min-w-16 h-16 rounded-full bg-indigo-100 bg-opacity-10 flex items-center justify-center text-2xl font-bold text-indigo-600 mb-4 md:mb-0">4</div>
+                            </div>
+                            <div class="md:w-3/4">
+                                <h3 class="text-xl font-semibold mb-2">Automatic Calendar Update</h3>
+                                <p class="text-gray-300">Your calendar is automatically updated with the appointment details, including lead information and context from their marketing interaction.</p>
+                            </div>
+                        </div>
+
+                        <!-- Connector -->
+                        <div class="step-connector w-1 md:w-3/4 h-10 md:h-1 my-2"></div>
+
+                        <!-- Step 5 -->
+                        <div class="flex flex-col md:flex-row w-full items-center" data-aos="fade-left" data-aos-delay="100">
+                            <div class="md:w-1/4 flex justify-center">
+                                <div class="w-16 min-w-16 h-16 rounded-full bg-indigo-100 bg-opacity-10 flex items-center justify-center text-2xl font-bold text-indigo-600 mb-4 md:mb-0">5</div>
+                            </div>
+                            <div class="md:w-3/4">
+                                <h3 class="text-xl font-semibold mb-2">Smart Reminder Sequence</h3>
+                                <p class="text-gray-300">Automated reminders are sent to both you and the lead at strategic intervals to reduce no-shows and increase preparation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="py-16">
+            <div class="container px-4 mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Key Benefits</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Benefit 1 -->
+                    <div class="card p-6 lg:p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                        <div class="benefit-icon w-12 h-12 rounded-full grid items-center justify-center mb-4">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Time Savings</h3>
+                        <p class="text-gray-300 mb-4">Eliminate the administrative burden of scheduling appointments manually.</p>
+                        <div class="flex items-center justify-between bg-gray-50 p-4 rounded-lg bg-opacity-10">
+                            <span class="text-gray-300">Traditional Scheduling:</span>
+                            <span class="font-semibold">5+ hours/week</span>
+                        </div>
+                        <div class="flex items-center justify-between bg-indigo-50 bg-opacity-75 p-4 rounded-lg mt-2">
+                            <span class="text-indigo-700">With Our System:</span>
+                            <span class="font-semibold text-indigo-700">0 hours/week</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mt-3 italic">Based on average agent data managing 20+ leads per week</p>
+                    </div>
+
+                    <!-- Benefit 2 -->
+                    <div class="card p-6 lg:p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                        <div class="benefit-icon w-12 h-12 rounded-full grid items-center justify-center mb-4">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Conversion Improvement</h3>
+                        <p class="text-gray-300 mb-4">Strike while interest is high by enabling immediate scheduling.</p>
+                        <div class="bg-gray-50 bg-opacity-10 rounded-lg overflow-hidden">
+                            <div class="h-2 bg-gray-300 w-full">
+                                <div class="h-2 bg-gray-500 w-3/5" style="width: 38%"></div>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-300">Traditional Follow-up:</span>
+                                    <span class="font-semibold">38% conversion</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 rounded-lg overflow-hidden mt-2">
+                            <div class="h-2 bg-indigo-200 w-full">
+                                <div class="h-2 bg-indigo-600 w-4/5" style="width: 72%"></div>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex justify-between">
+                                    <span class="text-indigo-700">Instant Scheduling:</span>
+                                    <span class="font-semibold text-indigo-700">72% conversion</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-500 text-sm mt-3 italic">Average improvement in lead-to-appointment conversion rate</p>
+                    </div>
+
+                    <!-- Benefit 3 -->
+                    <div class="card p-6 lg:p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                        <div class="benefit-icon w-12 h-12 rounded-full grid items-center justify-center mb-4">
+                            <i class="fas fa-thumbs-up"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Reduced No-Shows</h3>
+                        <p class="text-gray-300 mb-4">Automated reminders and confirmations keep appointments on track.</p>
+                        <div class="flex items-center mt-2">
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-gray-500 h-4 rounded-full" style="width: 32%"></div>
+                            </div>
+                            <span class="ml-3 text-gray-300 font-semibold">32%</span>
+                        </div>
+                        <p class="text-gray-300 text-sm mt-1 mb-4">Traditional Appointment No-Show Rate</p>
+
+                        <div class="flex items-center">
+                            <div class="w-full bg-indigo-200 rounded-full h-4">
+                                <div class="bg-indigo-600 h-4 rounded-full" style="width: 8%"></div>
+                            </div>
+                            <span class="ml-3 text-indigo-700 font-semibold">8%</span>
+                        </div>
+                        <p class="text-indigo-700 text-sm mt-1">Main Street Scheduling No-Show Rate</p>
+                        <p class="text-gray-500 text-sm mt-4 italic">Based on 6-month study of 500+ real estate appointments</p>
+                    </div>
+
+                    <!-- Benefit 4 -->
+                    <div class="card p-6 lg:p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                        <div class="benefit-icon w-12 h-12 rounded-full grid items-center justify-center mb-4">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">24/7 Availability</h3>
+                        <p class="text-gray-300 mb-4">Never miss a potential client due to your schedule or timezone differences.</p>
+                        <div class="grid grid-cols-7 gap-1 mb-2">
+                            <div class="text-center p-1 text-xs rounded bg-indigo-100 bg-opacity-10">Mon</div>
+                            <div class="text-center p-1 text-xs rounded bg-indigo-100 bg-opacity-10">Tue</div>
+                            <div class="text-center p-1 text-xs rounded bg-indigo-100 bg-opacity-10">Wed</div>
+                            <div class="text-center p-1 text-xs rounded bg-indigo-100 bg-opacity-10">Thu</div>
+                            <div class="text-center p-1 text-xs rounded bg-indigo-100 bg-opacity-10">Fri</div>
+                            <div class="text-center p-1 text-xs rounded bg-indigo-100 bg-opacity-10">Sat</div>
+                            <div class="text-center p-1 text-xs rounded bg-indigo-100 bg-opacity-10">Sun</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg bg-opacity-10 mb-2">
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Traditional Business Hours:</span>
+                                <span class="font-semibold">40 hours/week</span>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 bg-opacity-75 p-4 rounded-lg">
+                            <div class="flex justify-between">
+                                <span class="text-indigo-700">With Our System:</span>
+                                <span class="font-semibold text-indigo-700">168 hours/week</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-500 text-sm mt-3 italic">47% of real estate appointments are scheduled outside business hours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integration Section -->
+        <section class="py-16">
+            <div class="container px-4 mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Seamless Integration</h2>
+                <div class="card p-6 lg:p-8 rounded-2xl" data-aos="fade-in" data-aos-delay="0">
+                    <p class="text-lg mb-8">Our Scheduling system integrates effortlessly with your existing tools and marketing channels to create a unified workflow.</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="integration-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-calendar-alt text-blue-600"></i>
+                                </div>
+                                <h3 class="font-semibold">Calendar Apps</h3>
+                            </div>
+                            <p class="text-sm text-gray-300">Syncs with Google Calendar, iCal, Outlook, and other calendar applications.</p>
+                        </div>
+
+                        <div class="integration-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-envelope text-purple-600"></i>
+                                </div>
+                                <h3 class="font-semibold">Email Marketing</h3>
+                            </div>
+                            <p class="text-sm text-gray-300">Embed booking links directly in marketing emails and automated sequences.</p>
+                        </div>
+
+                        <div class="integration-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-comments text-green-600"></i>
+                                </div>
+                                <h3 class="font-semibold">SMS Campaigns</h3>
+                            </div>
+                            <p class="text-sm text-gray-300">Send booking links via text with automatic follow-up reminders.</p>
+                        </div>
+
+                        <div class="integration-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-users text-red-600"></i>
+                                </div>
+                                <h3 class="font-semibold">CRM Systems</h3>
+                            </div>
+                            <p class="text-sm text-gray-300">Appointments automatically update your CRM with detailed lead information.</p>
+                        </div>
+
+                        <div class="integration-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-globe text-yellow-600"></i>
+                                </div>
+                                <h3 class="font-semibold">Website/Landing Pages</h3>
+                            </div>
+                            <p class="text-sm text-gray-300">Embed on your website with customizable design to match your branding.</p>
+                        </div>
+
+                        <div class="integration-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-hashtag text-pink-600"></i>
+                                </div>
+                                <h3 class="font-semibold">Social Media</h3>
+                            </div>
+                            <p class="text-sm text-gray-300">Add booking links to your social profiles and direct message campaigns.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 p-5 bg-gray-50 bg-opacity-10 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4">Workflow Example</h3>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <div class="flex items-center">
+                                <div class="p-3 bg-white rounded-lg shadow-sm">
+                                    <i class="fas fa-ad text-blue-500"></i>
+                                </div>
+                                <i class="fas fa-arrow-right mx-2 text-gray-400"></i>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="p-3 bg-white rounded-lg shadow-sm">
+                                    <i class="fas fa-laptop-house text-purple-500"></i>
+                                </div>
+                                <i class="fas fa-arrow-right mx-2 text-gray-400"></i>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="p-3 bg-white rounded-lg shadow-sm">
+                                    <i class="fas fa-calendar-check text-indigo-500"></i>
+                                </div>
+                                <i class="fas fa-arrow-right mx-2 text-gray-400"></i>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="p-3 bg-white rounded-lg shadow-sm">
+                                    <i class="fas fa-bell text-red-500"></i>
+                                </div>
+                                <i class="fas fa-arrow-right mx-2 text-gray-400"></i>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="p-3 bg-white rounded-lg shadow-sm">
+                                    <i class="fas fa-handshake text-green-500"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap justify-center text-xs text-gray-300 mt-2 gap-4">
+                            <div class="text-center w-16">Marketing Campaign</div>
+                            <div class="text-center w-16">Landing Page</div>
+                            <div class="text-center w-16">Scheduling</div>
+                            <div class="text-center w-16">Reminders</div>
+                            <div class="text-center w-16">Meeting</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Real World Examples -->
+        <section class="py-16">
+            <div class="container px-4 mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Real-World Applications</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Example 1 -->
+                    <div class="card p-6 lg:p-8 rounded-2xl" data-aos="fade-left" data-aos-delay="100">
+                        <h3 class="text-xl font-semibold mb-4">Luxury Property Specialist</h3>
+                        <div class="testimonial mb-6">
+                            <p class="italic text-gray-300 mb-2">
+                                "I was spending 6+ hours weekly coordinating viewings with high-net-worth clients. Now they book instantly from my marketing emails, and my showing volume has increased by 40% with zero additional effort."
+                            </p>
+                            <p class="font-medium">— Sarah J., Scottsdale, AZ</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg bg-opacity-10 mb-3">
+                            <div class="font-semibold mb-1">Implementation:</div>
+                            <ul class="text-sm text-gray-300 list-disc pl-5">
+                                <li>Embedded scheduling in luxury property newsletters</li>
+                                <li>Added calendar booking to virtual tour landing pages</li>
+                                <li>Integrated with exclusive client CRM for seamless follow-up</li>
+                            </ul>
+                        </div>
+                        <div class="bg-indigo-50 bg-opacity-75 p-4 rounded-lg">
+                            <div class="font-semibold mb-1 text-indigo-700">Results:</div>
+                            <ul class="text-sm text-indigo-600 list-disc pl-5">
+                                <li>40% increase in property showings</li>
+                                <li>28% faster response time to inquiries</li>
+                                <li>6 hours weekly saved on administrative tasks</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Example 2 -->
+                    <div class="card p-6 lg:p-8 rounded-2xl" data-aos="fade-left" data-aos-delay="200">
+                        <h3 class="text-xl font-semibold mb-4">First-Time Homebuyer Specialist</h3>
+                        <div class="testimonial mb-6">
+                            <p class="italic text-gray-300 mb-2">
+                                "My first-time buyers were hesitant to call but loved the ability to book a no-pressure consultation right from my educational content. My consultation bookings tripled in the first month."
+                            </p>
+                            <p class="font-medium">— Marcus T., Chicago, IL</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg bg-opacity-10 mb-3">
+                            <div class="font-semibold mb-1">Implementation:</div>
+                            <ul class="text-sm text-gray-300 list-disc pl-5">
+                                <li>Added booking widgets to educational blog posts</li>
+                                <li>Embedded in first-time buyer webinar registration</li>
+                                <li>Included in post-webinar follow-up SMS sequences</li>
+                            </ul>
+                        </div>
+                        <div class="bg-indigo-50 bg-opacity-75 p-4 rounded-lg">
+                            <div class="font-semibold mb-1 text-indigo-700">Results:</div>
+                            <ul class="text-sm text-indigo-600 list-disc pl-5">
+                                <li>300% increase in consultation bookings</li>
+                                <li>65% reduction in lead response time</li>
+                                <li>42% increase in qualified buyer leads</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Example 3 -->
+                    <div class="card p-6 lg:p-8 rounded-2xl" data-aos="fade-left" data-aos-delay="100">
+                        <h3 class="text-xl font-semibold mb-4">Multi-Agent Team Leader</h3>
+                        <div class="testimonial mb-6">
+                            <p class="italic text-gray-300 mb-2">
+                                "Managing scheduling for my team of 8 agents was a full-time job. Now leads are automatically routed to the right agent based on specialty and availability, with zero bottlenecks."
+                            </p>
+                            <p class="font-medium">— David R., Miami, FL</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg bg-opacity-10 mb-3">
+                            <div class="font-semibold mb-1">Implementation:</div>
+                            <ul class="text-sm text-gray-300 list-disc pl-5">
+                                <li>Created specialized booking calendars for different property types</li>
+                                <li>Implemented intelligent agent routing based on lead criteria</li>
+                                <li>Centralized team calendar with reporting dashboard</li>
+                            </ul>
+                        </div>
+                        <div class="bg-indigo-50 bg-opacity-75 p-4 rounded-lg">
+                            <div class="font-semibold mb-1 text-indigo-700">Results:</div>
+                            <ul class="text-sm text-indigo-600 list-disc pl-5">
+                                <li>Eliminated need for dedicated scheduling coordinator</li>
+                                <li>Reduced lead assignment time from hours to seconds</li>
+                                <li>Improved team productivity by 27%</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Example 4 -->
+                    <div class="card p-6 lg:p-8 rounded-2xl" data-aos="fade-left" data-aos-delay="200">
+                        <h3 class="text-xl font-semibold mb-4">New Construction Specialist</h3>
+                        <div class="testimonial mb-6">
+                            <p class="italic text-gray-300 mb-2">
+                                "Our development launches created scheduling nightmares. Now interested buyers book their tours directly from our ads and landing pages, with automated follow-up."
+                            </p>
+                            <p class="font-medium">— Jennifer K., Austin, TX</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg bg-opacity-10 mb-3">
+                            <div class="font-semibold mb-1">Implementation:</div>
+                            <ul class="text-sm text-gray-300 list-disc pl-5">
+                                <li>Created development-specific booking pages with property details</li>
+                                <li>Implemented group tour scheduling for open houses</li>
+                                <li>Added VIP early-access booking for priority clients</li>
+                            </ul>
+                        </div>
+                        <div class="bg-indigo-50 bg-opacity-75 p-4 rounded-lg">
+                            <div class="font-semibold mb-1 text-indigo-700">Results:</div>
+                            <ul class="text-sm text-indigo-600 list-disc pl-5">
+                                <li>80% of tours now self-scheduled by prospects</li>
+                                <li>52% increase in qualified buyer traffic</li>
+                                <li>Reduced administrative staff needs by 15 hours weekly</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16">
+            <div class="container px-4 mx-auto">
+                <div class="card p-6 lg:p-8 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white" data-aos="fade-in" data-aos-delay="0">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Scheduling?</h2>
+                        <p class="text-lg opacity-90">Part of our comprehensive system that eliminates your administrative burden</p>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row justify-center md:items-center gap-8">
+                        <div class="md:w-1/2">
+                            <ul class="space-y-3">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                    <span>Saves 5+ hours weekly on appointment coordination</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                    <span>Increases lead-to-appointment conversion by 72%</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                    <span>Reduces appointment no-shows by 75%</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                    <span>Works seamlessly with your existing marketing</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                    <span>Part of our all-inclusive solution for just $2,000/month</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="md:w-1/2 bg-white bg-opacity-10 p-6 rounded-xl backdrop-filter backdrop-blur-sm">
+                            <h3 class="text-xl font-semibold mb-4 text-center">Schedule a Demo</h3>
+                            <form class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium mb-1 opacity-90">Your Name</label>
+                                    <input type="text" class="w-full p-2 rounded bg-white bg-opacity-20 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 text-white placeholder-white placeholder-opacity-50" placeholder="John Smith">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium mb-1 opacity-90">Your Email</label>
+                                    <input type="email" class="w-full p-2 rounded bg-white bg-opacity-20 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 text-white placeholder-white placeholder-opacity-50" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium mb-1 opacity-90">Phone Number</label>
+                                    <input type="tel" class="w-full p-2 rounded bg-white bg-opacity-20 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 text-white placeholder-white placeholder-opacity-50" placeholder="(555) 123-4567">
+                                </div>
+                                <button type="button" class="w-full bg-white text-indigo-700 font-semibold py-2 px-4 rounded hover:bg-opacity-95 transition duration-200">Book Your Demo Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ______________ end main area ______________ -->
+
+    <!-- ______________ start footer area ______________ -->
+    <footer class="py-12 bg-gray-900">
+        <div class="container px-4 mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-white mb-4">
+                        <span class="gradient-text">Main</span>Street
+                    </div>
+                    <p class="text-gray-400 mb-4">Smart marketing and digital workforce solutions designed by small business owners for small business owners.</p>
+                    <div class="flex space-x-4">
+                        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Solutions</h3>
+                    <ul class="space-y-2">
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="sms-marketing.html">SMS Marketing</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="digital-workforce.html">Digital Workforce</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="social-media-management.html">Social Media Management</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="lead-generation.html">Lead Generation</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="business-automation.html">Business Automation</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="about-us.html">About Us</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="case-studies.html">Case Studies</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="partners.html">Partners</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="blog.html">Blog</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a class="flex items-start" href="https://maps.app.goo.gl/S5toY5hjJduiY8mf9" target="_blank">
+                                <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-3"></i>
+                                <span class="text-gray-400">15201 N Cave Creek Rd, Suite B<br>Phoenix, AZ 85032</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center" href="tel:4809130641">
+                                <i class="fas fa-phone-alt text-blue-400 mr-3"></i>
+                                <span class="text-gray-400">480-913-0641</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center" href="mailto:info@mainstreetopportunity.com">
+                                <i class="fas fa-envelope text-blue-400 mr-3"></i>
+                                <span class="text-gray-400 break-all">info@mainstreetopportunity.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Main Street Opportunity. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a class="text-gray-400 hover:text-white text-sm transition-colors" href="privacy-policy.html">Privacy Policy</a>
+                    <a class="text-gray-400 hover:text-white text-sm transition-colors" href="terms-of-service.html">Terms of Service</a>
+                    <a class="text-gray-400 hover:text-white text-sm transition-colors" href="sitemap.html">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ______________ end header area ______________ -->
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.144.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

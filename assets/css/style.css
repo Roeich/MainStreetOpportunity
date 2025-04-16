@@ -950,3 +950,11 @@ body {
     }
 }
 /* ______________ end email management ______________ */
+
+/* ______________ start scheduling system ______________ */
+.step-connector {
+    height: 1px;
+    background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    margin-bottom: 24px;
+}
+/* ______________ end scheduling system ______________ */
