@@ -1006,3 +1006,56 @@ body {
     overflow: hidden;
   }
 /* ______________ end crm management system ______________ */
+
+/* ______________ start call management system ______________ */
+.icon-circle {
+    width: 64px;
+    height: 64px;
+    border-radius:
+  50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+  linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+    margin-bottom: 1rem;
+}
+.gradient-card {
+    background:
+  linear-gradient(135deg, #4338CA, #6366F1);
+    color: white;
+  }
+  .pulse-flow {
+    animation:
+  pulseFlow 2s infinite;
+  }
+  .flow-arrow {
+    position: relative;
+    width: 70px;
+    height: 2px;
+    background-color: #D1D5DB;
+  }
+  
+.flow-arrow::after {
+    content: '';
+  
+    position: absolute;
+  
+    right: 0;
+  
+    top: -4px;
+  
+    width: 0;
+  
+    height: 0;
+  
+    border-left:
+  10px solid #D1D5DB;
+  
+    border-top:
+  5px solid transparent;
+  
+    border-bottom:
+  5px solid transparent;
+}
+/* ______________ end call management system ______________ */
