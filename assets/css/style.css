@@ -335,6 +335,7 @@ body {
 
 .step-number {
     width: 60px;
+    min-width: 60px;
     height: 60px;
     min-height: 60px;
     border-radius: 50%;
@@ -886,6 +887,7 @@ body {
     color: #4f46e5;
     margin-bottom: 16px;
 }
+
 .journey-line {
     height: 4px;
     background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 50%, #3b82f6 100%);
@@ -922,13 +924,15 @@ body {
     white-space: nowrap;
     color: #a5cbff;
 }
-@media(max-width:1279.98px){
-    .journey-description{
+
+@media(max-width:1279.98px) {
+    .journey-description {
         font-size: 10px;
     }
 }
-@media(max-width:1023.98px){
-    .journey-line{
+
+@media(max-width:1023.98px) {
+    .journey-line {
         margin: 0;
         text-align: center;
         display: flex;
@@ -936,7 +940,7 @@ body {
         gap: 16px;
     }
     .journey-line,
-    .journey-point{
+    .journey-point {
         height: auto;
         width: 100%;
         box-shadow: none;
@@ -944,17 +948,61 @@ body {
     }
     .journey-point,
     .journey-description,
-    .journey-label{
+    .journey-label {
         position: static;
         transform: none;
     }
 }
 /* ______________ end email management ______________ */
-
 /* ______________ start scheduling system ______________ */
+
 .step-connector {
     height: 1px;
     background: linear-gradient(90deg, #4f46e5, #7c3aed);
     margin-bottom: 24px;
 }
 /* ______________ end scheduling system ______________ */
+/* ______________ start crm management system ______________ */
+
+.pipeline-step {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.pipeline-step .step-number {
+    font-size: 16px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    margin-right: 15px;
+}
+
+.pipeline-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 19px;
+    width: 2px;
+    height: calc(100% - 50px);
+    background: linear-gradient(to bottom, #4f46e5, #7c3aed);
+}
+.example-card {
+    border-left: 4px solid #4f46e5;
+    background:
+  rgba(255, 255, 255, 0.10);
+    border-radius:
+  0 8px 8px 0;
+    padding:
+  15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+/* ______________ end crm management system ______________ */
