@@ -598,3 +598,130 @@ body {
   linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
   }
 /* ______________ end digital workforce marketing ______________ */
+
+/* ______________ start social media management ______________ */
+.platform-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.facebook-bg {
+    background: #1877F2;
+}
+
+.instagram-bg {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.linkedin-bg {
+    background: #0A66C2;
+}
+
+.twitter-bg {
+    background: #1DA1F2;
+}
+
+.pinterest-bg {
+    background: #E60023;
+}
+
+.youtube-bg {
+    background: #FF0000;
+}
+.float-animation {
+    animation: float 4s ease-in-out infinite;
+}
+
+.pulse-animation {
+    animation: pulse2 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse2 {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+.map-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.strategy-map-item{
+    position: relative;
+    z-index: 2;
+}
+
+.strategy-map-item::before{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #6366F1;
+    position: absolute;
+    top: 47px;
+    z-index: -1;
+    transform: translateX(50%);
+}
+.strategy-map-item:last-of-type::before{
+    content: none;
+}
+.step-1 {
+    background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+}
+
+.step-2 {
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+}
+
+.step-3 {
+    background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)
+}
+
+.step-4 {
+    background: linear-gradient(135deg, #EC4899 0%, #D946EF 100%);
+}
+
+@media(max-width:1023.98px){
+    .strategy-map{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .strategy-map-item{
+        width: 100%;
+    }
+    .map-circle {
+        width: 80px;
+        height: 80px;
+    }
+    .strategy-map-item .max-w-xs{
+        max-width: 100%;
+    }
+    .strategy-map-item::before {
+        content: none;
+    }
+    .platform-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+/* ______________ end social media management ______________ */
