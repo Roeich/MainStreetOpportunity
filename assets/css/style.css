@@ -725,3 +725,13 @@ body {
     }
 }
 /* ______________ end social media management ______________ */
+
+/* ______________ start transaction coordination management ______________ */
+.timeline-line {
+    position: absolute;
+    top: 12px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    z-index: 1;
+}
+/* ______________ end transaction coordination management ______________ */
