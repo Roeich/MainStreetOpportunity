@@ -85,9 +85,9 @@ body {
     overflow: hidden;
 }
 
-.typing_text_container {
+/* .typing_text_container {
     min-height: 4em;
-}
+} */
 
 .gradient-text {
     background: -o-linear-gradient(left, var(--primary), var(--secondary));
@@ -522,11 +522,11 @@ body {
     fill: rgba(255, 255, 255, 0.03);
 }
 
-@media (max-width: 1279.98px) {
+/* @media (max-width: 1279.98px) {
     .typing_text_container {
         min-height: 5em;
     }
-}
+} */
 
 @media (max-width: 1023.98px) {
     .steps-container .step-card:nth-of-type(2n+2)::before {
@@ -570,11 +570,11 @@ body {
     }
 }
 
-@media(max-width:575.98px) {
+/* @media(max-width:575.98px) {
     .typing_text_container {
         min-height: 5em;
     }
-}
+} */
 
 @media(min-width:1400px) {
     .container {

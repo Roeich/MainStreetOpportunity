@@ -78,24 +78,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Typed.js for hero text
-    if (window.Typed) {
-        if(document.getElementById("typed-text")){
-            new Typed('#typed-text', {
-                strings: [
-                    'Your Business.<br>Our AI.<br><span class="gradient-text">Unlimited Growth.</span>',
-                    'More Leads.<br>Less Work.<br><span class="gradient-text">Higher Profits.</span>',
-                    'Smart Marketing.<br>Digital Workforce.<br><span class="gradient-text">Automated Success.</span>'
-                ],
-                typeSpeed: 50,
-                backSpeed: 25,
-                backDelay: 3000,
-                startDelay: 500,
-                loop: true,
-                cursorChar: '|',
-                contentType: 'html'
-            });
-        }
-    }
+    // if (window.Typed) {
+    //     if(document.getElementById("typed-text")){
+    //         new Typed('#typed-text', {
+    //             strings: [
+    //                 'Your Business.<br>Our AI.<br><span class="gradient-text">Unlimited Growth.</span>',
+    //                 'More Leads.<br>Less Work.<br><span class="gradient-text">Higher Profits.</span>',
+    //                 'Smart Marketing.<br>Digital Workforce.<br><span class="gradient-text">Automated Success.</span>'
+    //             ],
+    //             typeSpeed: 50,
+    //             backSpeed: 25,
+    //             backDelay: 3000,
+    //             startDelay: 500,
+    //             loop: true,
+    //             cursorChar: '|',
+    //             contentType: 'html'
+    //         });
+    //     }
+    // }
 
     // Initialize particles.js
     if (window.particlesJS) {
