@@ -659,6 +659,7 @@ body {
 .timeline-container {
     background: linear-gradient(90deg, rgba(147, 51, 234, 0.1) 0%, rgba(79, 70, 229, 0.1) 100%);
 }
+
 .timeline_1 .timeline-line {
     position: absolute;
     top: 12px;
@@ -666,20 +667,22 @@ body {
     background: linear-gradient(90deg, #4f46e5, #7c3aed);
     z-index: 1;
 }
-.timeline_1 .timeline-container{
+
+.timeline_1 .timeline-container {
     position: relative;
     z-index: 5;
 }
+
 .timeline_1 .timeline-dot {
     width: 32px !important;
     height: 32px !important;
     left: -70px;
     z-index: 1;
 }
+
 .timeline-dot {
     background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
 }
-
 
 .hub-connection {
     animation: connection 2s infinite alternate;
@@ -699,7 +702,8 @@ body {
 .benefit-icon {
     background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
 }
-@media(max-width:1023.98px){
+
+@media(max-width:1023.98px) {
     .timeline_1 .timeline-line {
         display: block !important;
     }
@@ -1062,5 +1066,27 @@ body {
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
 }
-
 /* ______________ end call management system ______________ */
+/* ______________ start services / solutions page ______________ */
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #4338CA, #6366F1);
+    margin-top: 16px;
+    border-radius: 2px;
+}
+.section-title.text-center::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+.process-step .step-number {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    min-height: 32px;
+    font-size: 16px;
+  }
+/* ______________ end services / solutions page ______________ */

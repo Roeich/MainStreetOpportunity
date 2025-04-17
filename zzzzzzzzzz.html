@@ -3,252 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Call Management | Main Street Opportunity</title>
+    <title>Marketing Services | Main Street Opportunity</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #4F46E5;
-            --secondary-color: #8B5CF6;
-            --accent-color: #EF4444;
-            --bg-gradient-start: #F9FAFB;
-            --bg-gradient-end: #F3F4F6;
+            --primary-color: #3a36e0;
+            --secondary-color: #ff6584;
+            --gradient-start: #4a40e4;
+            --gradient-end: #6e65ff;
         }
         
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
-            color: #1F2937;
-            min-height: 100vh;
+            background-color: #f8f9ff;
+            color: #333;
+            overflow-x: hidden;
         }
         
-        .main-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
         }
         
-        .gradient-heading {
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+        .gradient-text {
+            background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
         }
         
         .card {
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 16px;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            overflow: hidden;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+            transition: all 0.3s ease;
         }
         
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.15);
         }
         
-        .gradient-card {
-            background: linear-gradient(135deg, #4338CA, #6366F1);
+        .btn-primary {
+            background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
             color: white;
+            transition: all 0.3s ease;
         }
         
-        .icon-circle {
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
-            margin-bottom: 1rem;
-        }
-        
-        .flow-arrow {
-            position: relative;
-            width: 70px;
-            height: 2px;
-            background-color: #D1D5DB;
-        }
-        
-        .flow-arrow::after {
-            content: '';
-            position: absolute;
-            right: 0;
-            top: -4px;
-            width: 0;
-            height: 0;
-            border-left: 10px solid #D1D5DB;
-            border-top: 5px solid transparent;
-            border-bottom: 5px solid transparent;
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(74, 64, 228, 0.3);
         }
         
         .stat-card {
-            border-radius: 12px;
-            padding: 1.5rem;
-            background: white;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease;
-        }
-        
-        .stat-card:hover {
-            transform: scale(1.03);
-        }
-        
-        .gradient-border {
             position: relative;
-            border-radius: 16px;
+            overflow: hidden;
+            z-index: 1;
         }
         
-        .gradient-border::before {
-            content: "";
+        .stat-card::before {
+            content: '';
             position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--accent-color));
-            border-radius: 18px;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: rotate(45deg);
+            z-index: -1;
+            animation: shine 3s infinite;
+        }
+        
+        @keyframes shine {
+            0% {
+                left: -50%;
+                top: -50%;
+            }
+            100% {
+                left: 150%;
+                top: 150%;
+            }
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .process-step {
+            position: relative;
+        }
+        
+        .process-step::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 15px;
+            height: calc(100% - 15px);
+            width: 2px;
+            background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
             z-index: -1;
         }
         
-        /* Animation for the flow diagram */
-        @keyframes pulseFlow {
+        .process-step:last-child::after {
+            display: none;
+        }
+        
+        .process-step .step-number {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            color: white;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        
+        .integration-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .integration-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .ripple-bg {
+            background: linear-gradient(45deg, #ffffff11, #ffffff22);
+            position: absolute;
+            border-radius: 50%;
+            animation: ripple 8s linear infinite;
+            z-index: -1;
+        }
+        
+        @keyframes ripple {
             0% {
-                opacity: 0.4;
-            }
-            50% {
+                transform: scale(0.8);
                 opacity: 1;
             }
             100% {
-                opacity: 0.4;
+                transform: scale(2);
+                opacity: 0;
             }
         }
         
-        .pulse-flow {
-            animation: pulseFlow 2s infinite;
-        }
-        
-        /* Rotating gear animation */
-        @keyframes rotateGear {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-        
-        .rotate-gear {
-            animation: rotateGear 10s linear infinite;
-        }
-        
-        .testimonial-card {
-            position: relative;
-            padding: 2rem;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        
-        .testimonial-card::before {
-            content: """;
-            position: absolute;
-            top: 10px;
-            left: 15px;
-            font-size: 5rem;
-            color: #E5E7EB;
-            font-family: serif;
-            line-height: 1;
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+            margin-top: 8px;
+            border-radius: 2px;
         }
     </style>
 </head>
 <body>
-    <div class="main-container">
-        <!-- hero Section -->
-        <section class="pt-24 lg:pt-32 pb-12">
-            <div class="container px-4 mx-auto">
-                <h1 class="text-4xl font-bold mb-4 gradient-heading">Call Management System</h1>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Automated lead routing and follow-up from your marketing campaigns
-                </p>
-            </div>
-        </section>
+    <!-- Header -->
+    <header class="relative overflow-hidden py-8 md:py-12">
+        <!-- Background Elements -->
+        <div class="ripple-bg w-64 h-64 top-[-100px] right-[-50px]"></div>
+        <div class="ripple-bg w-96 h-96 bottom-[-150px] left-[-100px]" style="animation-delay: 2s;"></div>
         
-        <!-- Overview Section -->
-        <section class="py-16">
-            <div class="container px-4 mx-auto">
-                <div class="card p-6 lg:p-8 mb-10">
-                    <h2 class="text-2xl font-semibold mb-6">System Overview</h2>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div>
-                            <p class="text-gray-700 mb-4">
-                                Our Call Management System automatically handles all inbound and outbound calls related to your real estate marketing campaigns, ensuring no lead goes uncontacted and every prospect receives a consistent, professional experience.
-                            </p>
-                            <ul class="space-y-3">
-                                <li class="flex items-start">
-                                    <span class="text-indigo-600 mr-2">
-                                        <i class="fas fa-check-circle"></i>
-                                    </span>
-                                    <span>Custom phone numbers for each marketing campaign</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="text-indigo-600 mr-2">
-                                        <i class="fas fa-check-circle"></i>
-                                    </span>
-                                    <span>24/7 professional call answering with virtual assistants</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="text-indigo-600 mr-2">
-                                        <i class="fas fa-check-circle"></i>
-                                    </span>
-                                    <span>Intelligent lead qualification through custom script logic</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="text-indigo-600 mr-2">
-                                        <i class="fas fa-check-circle"></i>
-                                    </span>
-                                    <span>Automated appointment scheduling and calendar integration</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="text-indigo-600 mr-2">
-                                        <i class="fas fa-check-circle"></i>
-                                    </span>
-                                    <span>Sequential follow-up calls based on prospect interest level</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="text-indigo-600 mr-2">
-                                        <i class="fas fa-check-circle"></i>
-                                    </span>
-                                    <span>Call recording, transcription, and analytics</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="flex items-center justify-center">
-                            <!-- Call System Illustration -->
-                            <div class="relative w-full max-w-sm">
-                                <div class="absolute inset-0 bg-indigo-100 rounded-full opacity-30 transform scale-125"></div>
-                                <div class="relative p-6 bg-white rounded-2xl shadow-lg">
-                                    <div class="w-full h-48 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl flex items-center justify-center mb-4">
-                                        <i class="fas fa-headset text-6xl text-indigo-500"></i>
-                                    </div>
-                                    <div class="flex justify-between items-center">
-                                        <div class="flex items-center">
-                                            <div class="h-3 w-3 bg-green-500 rounded-full mr-2"></div>
-                                            <span class="text-sm text-gray-600">Active System</span>
-                                        </div>
-                                        <div>
-                                            <span class="text-xs text-gray-500">24/7 Operation</span>
-                                        </div>
-                                    </div>
-                                    <div class="mt-2 flex justify-between">
-                                        <div class="text-xs text-gray-500">
-                                            <i class="fas fa-phone-alt mr-1"></i> 57 calls today
-                                        </div>
-                                        <div class="text-xs text-gray-500">
-                                            <i class="fas fa-user-check mr-1"></i> 18 leads qualified
-                                        </div>
+        <div class="container px-4 mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="text-3xl font-bold gradient-text mr-2">Main Street</div>
+                    <div class="text-xl font-semibold text-gray-700">Opportunity</div>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors">Services</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors">About</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-gray-700 text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-6 md:py-12 relative overflow-hidden">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                        Complete <span class="gradient-text">Marketing Services</span> for Elite Realtors
+                    </h1>
+                    <p class="text-gray-600 text-lg mb-6">
+                        Our comprehensive marketing solution eliminates the complexity of promoting your listings and personal brand, letting you focus on what matters most: your clients.
+                    </p>
+                    <div class="flex space-x-4">
+                        <button class="btn-primary px-6 py-3 rounded-lg font-medium">
+                            Get Started
+                        </button>
+                        <button class="border border-gray-300 px-6 py-3 rounded-lg font-medium text-gray-700 hover:bg-gray-50 transition-colors">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <div class="w-full h-80 md:h-96 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="relative w-full h-full flex items-center justify-center">
+                                <div class="absolute w-64 h-64 bg-purple-100 rounded-full opacity-70 floating" style="animation-delay: 0.5s;"></div>
+                                <div class="absolute w-48 h-48 bg-blue-100 rounded-full opacity-70 floating" style="animation-delay: 1s;"></div>
+                                <div class="absolute w-32 h-32 bg-pink-100 rounded-full opacity-70 floating" style="animation-delay: 1.5s;"></div>
+                                <div class="relative z-10">
+                                    <div class="shadow-xl rounded-xl overflow-hidden bg-white p-4 floating">
+                                        <img src="https://via.placeholder.com/400x300/f5f5f5/a0a0a0?text=Marketing+Dashboard" alt="Marketing Dashboard" class="rounded-lg w-full">
                                     </div>
                                 </div>
                             </div>
@@ -256,452 +235,654 @@
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <!-- How It Works Section -->
-        <section class="py-16">
-            <div class="container px-4 mx-auto">
-                <h2 class="text-3xl font-bold mb-8 gradient-heading text-center">How Automated Routing Works</h2>
-                
-                <div class="card p-6 lg:p-8">
-                    <div class="flex flex-col items-center">
-                        <!-- Flow Diagram -->
-                        <div class="flex flex-col md:flex-row items-center justify-center w-full mb-12 space-y-8 md:space-y-0 md:space-x-4">
-                            <!-- Step 1 -->
-                            <div class="card p-6 w-full md:w-48 text-center">
-                                <div class="icon-circle mx-auto bg-indigo-100">
-                                    <i class="fas fa-phone-alt text-indigo-600 text-2xl"></i>
-                                </div>
-                                <h3 class="font-semibold mb-1">Incoming Call</h3>
-                                <p class="text-sm text-gray-600">Lead responds to your marketing</p>
-                            </div>
-                            
-                            <!-- Arrow 1 -->
-                            <div class="flow-arrow pulse-flow hidden md:block"></div>
-                            
-                            <!-- Step 2 -->
-                            <div class="card p-6 w-full md:w-48 text-center">
-                                <div class="icon-circle mx-auto bg-indigo-100">
-                                    <i class="fas fa-user-headset text-indigo-600 text-2xl"></i>
-                                </div>
-                                <h3 class="font-semibold mb-1">Virtual Assistant</h3>
-                                <p class="text-sm text-gray-600">Professional greeting and initial qualifying</p>
-                            </div>
-                            
-                            <!-- Arrow 2 -->
-                            <div class="flow-arrow pulse-flow hidden md:block"></div>
-                            
-                            <!-- Step 3 -->
-                            <div class="card p-6 w-full md:w-48 text-center">
-                                <div class="icon-circle mx-auto bg-indigo-100">
-                                    <i class="fas fa-filter text-indigo-600 text-2xl"></i>
-                                </div>
-                                <h3 class="font-semibold mb-1">Lead Scoring</h3>
-                                <p class="text-sm text-gray-600">AI-powered qualification assessment</p>
-                            </div>
-                            
-                            <!-- Arrow 3 -->
-                            <div class="flow-arrow pulse-flow hidden md:block"></div>
-                            
-                            <!-- Step 4 -->
-                            <div class="card p-6 w-full md:w-48 text-center">
-                                <div class="icon-circle mx-auto bg-indigo-100">
-                                    <i class="fas fa-route text-indigo-600 text-2xl"></i>
-                                </div>
-                                <h3 class="font-semibold mb-1">Routing Logic</h3>
-                                <p class="text-sm text-gray-600">Custom rules direct leads appropriately</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Results Boxes -->
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
-                            <div class="gradient-card p-6 rounded-xl text-center">
-                                <div class="icon-circle mx-auto">
-                                    <i class="fas fa-calendar-check text-white text-2xl"></i>
-                                </div>
-                                <h3 class="font-semibold text-lg mb-2">Hot Lead</h3>
-                                <p class="text-sm opacity-80">Immediate appointment scheduling in your calendar</p>
-                            </div>
-                            
-                            <div class="gradient-card p-6 rounded-xl text-center">
-                                <div class="icon-circle mx-auto">
-                                    <i class="fas fa-user-clock text-white text-2xl"></i>
-                                </div>
-                                <h3 class="font-semibold text-lg mb-2">Warm Lead</h3>
-                                <p class="text-sm opacity-80">Nurturing sequence with scheduled follow-up calls</p>
-                            </div>
-                            
-                            <div class="gradient-card p-6 rounded-xl text-center">
-                                <div class="icon-circle mx-auto">
-                                    <i class="fas fa-database text-white text-2xl"></i>
-                                </div>
-                                <h3 class="font-semibold text-lg mb-2">Future Lead</h3>
-                                <p class="text-sm opacity-80">Added to CRM with automated long-term nurturing</p>
-                            </div>
-                        </div>
+        </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="py-10 md:py-16 bg-gray-50">
+        <div class="container px-4 mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title mx-auto">What Our Marketing Services Include</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="card p-6">
+                    <div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mb-4">
+                        <i class="fas fa-camera text-white text-2xl"></i>
                     </div>
+                    <h3 class="text-xl font-semibold mb-3">Professional Photography</h3>
+                    <p class="text-gray-600">
+                        High-quality, professionally edited photos that showcase your listings in the best possible light.
+                    </p>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="card p-6">
+                    <div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mb-4">
+                        <i class="fas fa-bullhorn text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Targeted Campaigns</h3>
+                    <p class="text-gray-600">
+                        Data-driven advertising campaigns focused on the most qualified buyers for your specific listings.
+                    </p>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="card p-6">
+                    <div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mb-4">
+                        <i class="fas fa-pen-fancy text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Content Creation</h3>
+                    <p class="text-gray-600">
+                        Compelling listing descriptions, blog posts, and email content tailored to your voice and style.
+                    </p>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="card p-6">
+                    <div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mb-4">
+                        <i class="fas fa-share-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Social Media Management</h3>
+                    <p class="text-gray-600">
+                        Consistent, engaging posts across all platforms, timed for maximum visibility and engagement.
+                    </p>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="card p-6">
+                    <div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Analytics & Reporting</h3>
+                    <p class="text-gray-600">
+                        Detailed performance metrics and insights to continuously improve your marketing strategy.
+                    </p>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="card p-6">
+                    <div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mb-4">
+                        <i class="fas fa-rocket text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Lead Generation</h3>
+                    <p class="text-gray-600">
+                        Proactive campaigns designed to attract qualified buyers and sellers to your business.
+                    </p>
                 </div>
             </div>
-        </section>
-        
-        <!-- Key Benefits Section -->
-        <section class="py-16">
-            <div class="container px-4 mx-auto">
-                <h2 class="text-3xl font-bold mb-8 gradient-heading text-center">Key Benefits & Metrics</h2>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    <!-- Stat 1 -->
-                    <div class="stat-card text-center">
-                        <div class="text-4xl font-bold text-indigo-600 mb-2">97%</div>
-                        <div class="text-gray-600 text-sm">Lead Response Rate</div>
-                        <div class="mt-2 text-xs text-gray-500">Industry average: 48%</div>
-                    </div>
-                    
-                    <!-- Stat 2 -->
-                    <div class="stat-card text-center">
-                        <div class="text-4xl font-bold text-indigo-600 mb-2">3 min</div>
-                        <div class="text-gray-600 text-sm">Average Response Time</div>
-                        <div class="mt-2 text-xs text-gray-500">Industry average: 42 min</div>
-                    </div>
-                    
-                    <!-- Stat 3 -->
-                    <div class="stat-card text-center">
-                        <div class="text-4xl font-bold text-indigo-600 mb-2">24/7</div>
-                        <div class="text-gray-600 text-sm">Availability</div>
-                        <div class="mt-2 text-xs text-gray-500">Never miss a lead again</div>
-                    </div>
-                    
-                    <!-- Stat 4 -->
-                    <div class="stat-card text-center">
-                        <div class="text-4xl font-bold text-indigo-600 mb-2">43%</div>
-                        <div class="text-gray-600 text-sm">Increase in Conversions</div>
-                        <div class="mt-2 text-xs text-gray-500">Compared to manual handling</div>
-                    </div>
-                </div>
-                
-                <div class="card p-6 lg:p-8">
-                    <h3 class="text-xl font-semibold mb-6">How This Transforms Your Business:</h3>
-                    
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div>
-                            <div class="mb-6">
-                                <div class="flex items-start mb-2">
-                                    <div class="text-indigo-600 mr-3 mt-1">
-                                        <i class="fas fa-clock"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold">Save 12+ Hours Weekly</h4>
-                                        <p class="text-gray-600 text-sm">Eliminate time spent on phone calls, voicemails, and manual follow-up</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-6">
-                                <div class="flex items-start mb-2">
-                                    <div class="text-indigo-600 mr-3 mt-1">
-                                        <i class="fas fa-user-plus"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold">Increase Lead Capture by 217%</h4>
-                                        <p class="text-gray-600 text-sm">Never miss another call, even outside business hours</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-6">
-                                <div class="flex items-start mb-2">
-                                    <div class="text-indigo-600 mr-3 mt-1">
-                                        <i class="fas fa-chart-line"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold">Optimize Marketing ROI</h4>
-                                        <p class="text-gray-600 text-sm">Track which marketing channels generate the best-converting calls</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <div class="mb-6">
-                                <div class="flex items-start mb-2">
-                                    <div class="text-indigo-600 mr-3 mt-1">
-                                        <i class="fas fa-handshake"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold">Enhance Professional Image</h4>
-                                        <p class="text-gray-600 text-sm">Every caller receives consistent, professional handling</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-6">
-                                <div class="flex items-start mb-2">
-                                    <div class="text-indigo-600 mr-3 mt-1">
-                                        <i class="fas fa-bullseye"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold">Focus on Quality Prospects</h4>
-                                        <p class="text-gray-600 text-sm">Only spend time with pre-qualified leads ready for your expertise</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-6">
-                                <div class="flex items-start mb-2">
-                                    <div class="text-indigo-600 mr-3 mt-1">
-                                        <i class="fas fa-brain"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-semibold">Continuous Improvement</h4>
-                                        <p class="text-gray-600 text-sm">AI constantly refines qualification criteria based on conversion data</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Integration Section -->
-        <section class="py-16">
-            <div class="container px-4 mx-auto">
-                <h2 class="text-3xl font-bold mb-8 gradient-heading text-center">Seamless Integration</h2>
-                
-                <div class="card p-6 lg:p-8">
-                    <div class="grid md:grid-cols-3 gap-8">
-                        <div class="col-span-1">
-                            <h3 class="text-xl font-semibold mb-4">Works With Your Existing Tools</h3>
-                            <p class="text-gray-600 mb-6">Our Call Management System integrates seamlessly with your entire marketing ecosystem, creating a unified workflow without disruption.</p>
-                            
-                            <div class="flex flex-wrap gap-3 mb-6">
-                                <div class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">Google Calendar</div>
-                                <div class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">Outlook</div>
-                                <div class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">Salesforce</div>
-                                <div class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">Follow Up Boss</div>
-                                <div class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">Wise Agent</div>
-                                <div class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">Brivity</div>
-                                <div class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">kvCORE</div>
-                                <div class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">BoomTown</div>
-                                <div class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">+ Many More</div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-span-2">
-                            <div class="bg-gray-50 p-6 rounded-xl">
-                                <h4 class="font-semibold mb-4">Integration Ecosystem</h4>
-                                <div class="relative">
-                                    <!-- Central Hub -->
-                                    <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-indigo-600 rounded-full flex items-center justify-center text-white z-10">
-                                        <div class="text-center">
-                                            <i class="fas fa-phone-alt mb-1"></i>
-                                            <div class="text-xs font-semibold">Call<br>Management</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Connection Diagram -->
-                                    <div class="w-full h-64 flex items-center justify-center">
-                                        <div class="relative w-full max-w-md h-full">
-                                            <!-- Marketing Connection -->
-                                            <div class="absolute top-0 left-0 w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center">
-                                                <div class="text-center text-purple-700">
-                                                    <i class="fas fa-ad"></i>
-                                                    <div class="text-xs">Marketing</div>
-                                                </div>
-                                            </div>
-                                            <div class="absolute top-10 left-24 w-24 h-1 bg-purple-200 transform rotate-45"></div>
-                                            
-                                            <!-- CRM Connection -->
-                                            <div class="absolute top-0 right-0 w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center">
-                                                <div class="text-center text-blue-700">
-                                                    <i class="fas fa-database"></i>
-                                                    <div class="text-xs">CRM</div>
-                                                </div>
-                                            </div>
-                                            <div class="absolute top-10 right-24 w-24 h-1 bg-blue-200 transform -rotate-45"></div>
-                                            
-                                            <!-- Calendar Connection -->
-                                            <div class="absolute bottom-0 left-0 w-20 h-20 bg-green-100 rounded-full flex items-center justify-center">
-                                                <div class="text-center text-green-700">
-                                                    <i class="fas fa-calendar"></i>
-                                                    <div class="text-xs">Calendar</div>
-                                                </div>
-                                            </div>
-                                            <div class="absolute bottom-10 left-24 w-24 h-1 bg-green-200 transform -rotate-45"></div>
-                                            
-                                            <!-- SMS Connection -->
-                                            <div class="absolute bottom-0 right-0 w-20 h-20 bg-red-100 rounded-full flex items-center justify-center">
-                                                <div class="text-center text-red-700">
-                                                    <i class="fas fa-comment-alt"></i>
-                                                    <div class="text-xs">SMS</div>
-                                                </div>
-                                            </div>
-                                            <div class="absolute bottom-10 right-24 w-24 h-1 bg-red-200 transform rotate-45"></div>
-                                            
-                                            <!-- Background Circle -->
-                                            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-indigo-100 rounded-full opacity-50"></div>
+        </div>
+    </section>
+
+    <!-- Key Benefits Section -->
+    <section class="py-10 md:py-16">
+        <div class="container px-4 mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title mx-auto">Key Benefits</h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="relative">
+                        <div class="w-full h-96 relative">
+                            <div class="absolute inset-0">
+                                <!-- Circular progress element -->
+                                <div class="absolute top-10 left-10">
+                                    <div class="relative w-32 h-32">
+                                        <svg class="w-full h-full" viewBox="0 0 100 100">
+                                            <circle cx="50" cy="50" r="45" fill="none" stroke="#f0f0f0" stroke-width="8" />
+                                            <circle cx="50" cy="50" r="45" fill="none" stroke="url(#gradient)" stroke-width="8" stroke-dasharray="283" stroke-dashoffset="70" transform="rotate(-90 50 50)" />
+                                            <defs>
+                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" stop-color="var(--gradient-start)" />
+                                                    <stop offset="100%" stop-color="var(--gradient-end)" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                        <div class="absolute inset-0 flex items-center justify-center flex-col">
+                                            <span class="text-3xl font-bold gradient-text">75%</span>
+                                            <span class="text-sm text-gray-500">Time Saved</span>
                                         </div>
                                     </div>
                                 </div>
                                 
-                                <div class="mt-8 text-sm text-gray-600">
-                                    <p>The Call Management System sits at the center of your marketing technology stack, automatically routing call data, appointment information, and lead details to all connected systems without manual intervention.</p>
+                                <!-- Bar chart element -->
+                                <div class="absolute bottom-20 right-10">
+                                    <div class="bg-white rounded-lg shadow-lg p-4 w-56">
+                                        <h4 class="text-sm font-semibold mb-3">Lead Generation Growth</h4>
+                                        <div class="space-y-3">
+                                            <div>
+                                                <div class="flex justify-between text-xs mb-1">
+                                                    <span>Before</span>
+                                                    <span>45 leads/month</span>
+                                                </div>
+                                                <div class="h-2 w-full bg-gray-200 rounded-full overflow-hidden">
+                                                    <div class="h-full bg-gray-400 rounded-full" style="width: 30%"></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="flex justify-between text-xs mb-1">
+                                                    <span>With Us</span>
+                                                    <span>150 leads/month</span>
+                                                </div>
+                                                <div class="h-2 w-full bg-gray-200 rounded-full overflow-hidden">
+                                                    <div class="h-full gradient-bg rounded-full" style="width: 100%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Central visualization -->
+                                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                    <div class="bg-white rounded-full shadow-xl p-6 w-40 h-40 flex items-center justify-center">
+                                        <div class="text-center">
+                                            <div class="text-4xl font-bold gradient-text">3x</div>
+                                            <div class="text-sm text-gray-600">ROI Increase</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Clock element for time savings -->
+                                <div class="absolute top-20 right-20">
+                                    <div class="bg-white rounded-lg shadow-lg p-3">
+                                        <div class="text-center">
+                                            <i class="far fa-clock text-2xl gradient-text mb-1"></i>
+                                            <div class="text-lg font-semibold">38+ Hours</div>
+                                            <div class="text-xs text-gray-500">Saved Weekly</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <!-- Real World Applications -->
-        <section class="py-16">
-            <div class="container px-4 mx-auto">
-                <h2 class="text-3xl font-bold mb-8 gradient-heading text-center">Real-World Applications</h2>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                    <!-- Case Study 1 -->
-                    <div class="testimonial-card">
-                        <div class="mb-4 flex items-center">
-                            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+                <div class="md:w-1/2 md:pl-10">
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-4">
+                                <i class="fas fa-clock text-white"></i>
+                            </div>
                             <div>
-                                <h4 class="font-semibold">Sarah Johnson</h4>
-                                <p class="text-sm text-gray-600">Luxury Home Specialist, San Diego</p>
+                                <h3 class="text-xl font-semibold mb-2">Reclaim Your Time</h3>
+                                <p class="text-gray-600">
+                                    Free up to 38+ hours per week previously spent on marketing tasks, allowing you to focus on high-value client interactions.
+                                </p>
                             </div>
                         </div>
-                        <p class="text-gray-700 mb-4">
-                            "After implementing the Call Management System, my showing appointment rate increased by 68%. The best part? I'm not tied to my phone answering calls from tire-kickers anymore. Only pre-qualified prospects get my direct attention."
-                        </p>
-                        <div class="flex justify-between text-sm text-gray-500">
-                            <div>Results after 90 days:</div>
-                            <div>+41% in Listings</div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-4">
+                                <i class="fas fa-chart-bar text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Increased Visibility</h3>
+                                <p class="text-gray-600">
+                                    Our multichannel approach ensures your listings and personal brand receive 3-5x more exposure than traditional methods.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-4">
+                                <i class="fas fa-users text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Higher Quality Leads</h3>
+                                <p class="text-gray-600">
+                                    Advanced targeting delivers pre-qualified prospects with 68% higher intent to purchase compared to mass marketing.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-4">
+                                <i class="fas fa-dollar-sign text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Proven ROI</h3>
+                                <p class="text-gray-600">
+                                    Our clients see an average of 300% return on their marketing investment through increased listing activity and higher closing rates.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <!-- Case Study 2 -->
-                    <div class="testimonial-card">
-                        <div class="mb-4 flex items-center">
-                            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
-                            <div>
-                                <h4 class="font-semibold">Michael Rodriguez</h4>
-                                <p class="text-sm text-gray-600">Team Leader, Chicago Metro</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-700 mb-4">
-                            "My team was missing evening and weekend calls from our Facebook ads. The Call Management System now handles over 400 calls monthly, with perfect routing to the right agent based on our territory rules."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-10 md:py-16 bg-gray-50">
+        <div class="container px-4 mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title mx-auto">How It Works</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <!-- Step 1 -->
+                <div class="process-step flex mb-12">
+                    <div class="step-number">1</div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold mb-2">Strategy Development</h3>
+                        <p class="text-gray-600 mb-4">
+                            We create a customized marketing plan aligned with your specific business goals, target audience, and listing types.
                         </p>
-                        <div class="flex justify-between text-sm text-gray-500">
-                            <div>Results after 60 days:</div>
-                            <div>28 Additional Transactions</div>
+                        <div class="card p-4 bg-white">
+                            <div class="flex items-start">
+                                <div class="w-1/3">
+                                    <i class="fas fa-lightbulb text-5xl gradient-text mb-2"></i>
+                                </div>
+                                <div class="w-2/3">
+                                    <ul class="text-sm text-gray-600 space-y-1">
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check text-green-500 mr-2"></i>
+                                            Audience analysis
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check text-green-500 mr-2"></i>
+                                            Market positioning
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check text-green-500 mr-2"></i>
+                                            Channel selection
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check text-green-500 mr-2"></i>
+                                            Budget optimization
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="card p-6 lg:p-8">
-                    <h3 class="text-xl font-semibold mb-6">Typical Applications for Realtors</h3>
-                    
-                    <div class="grid md:grid-cols-3 gap-6">
-                        <!-- Application 1 -->
-                        <div class="p-4 border border-gray-200 rounded-lg hover:border-indigo-300 transition-colors">
-                            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
-                                <i class="fas fa-sign text-indigo-600"></i>
-                            </div>
-                            <h4 class="font-semibold mb-2">Property Sign Calls</h4>
-                            <p class="text-sm text-gray-600">
-                                Unique tracking numbers on yard signs capture drive-by interest with immediate follow-up.
-                            </p>
-                        </div>
-                        
-                        <!-- Application 2 -->
-                        <div class="p-4 border border-gray-200 rounded-lg hover:border-indigo-300 transition-colors">
-                            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
-                                <i class="fas fa-ad text-indigo-600"></i>
-                            </div>
-                            <h4 class="font-semibold mb-2">Online Ad Campaigns</h4>
-                            <p class="text-sm text-gray-600">
-                                Different numbers for each ad campaign track performance and capture leads 24/7.
-                            </p>
-                        </div>
-                        
-                        <!-- Application 3 -->
-                        <div class="p-4 border border-gray-200 rounded-lg hover:border-indigo-300 transition-colors">
-                            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
-                                <i class="fas fa-home text-indigo-600"></i>
-                            </div>
-                            <h4 class="font-semibold mb-2">Open House Follow-Up</h4>
-                            <p class="text-sm text-gray-600">
-                                Automated call sequences to open house attendees with personalized messaging.
-                            </p>
-                        </div>
-                        
-                        <!-- Application 4 -->
-                        <div class="p-4 border border-gray-200 rounded-lg hover:border-indigo-300 transition-colors">
-                            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
-                                <i class="fas fa-hand-paper text-indigo-600"></i>
-                            </div>
-                            <h4 class="font-semibold mb-2">FSBO & Expired Outreach</h4>
-                            <p class="text-sm text-gray-600">
-                                Systematic calling campaigns to FSBO and expired listings with performance tracking.
-                            </p>
-                        </div>
-                        
-                        <!-- Application 5 -->
-                        <div class="p-4 border border-gray-200 rounded-lg hover:border-indigo-300 transition-colors">
-                            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
-                                <i class="fas fa-user-friends text-indigo-600"></i>
-                            </div>
-                            <h4 class="font-semibold mb-2">Past Client Nurturing</h4>
-                            <p class="text-sm text-gray-600">
-                                Scheduled check-in calls to past clients to maintain relationships and generate referrals.
-                            </p>
-                        </div>
-                        
-                        <!-- Application 6 -->
-                        <div class="p-4 border border-gray-200 rounded-lg hover:border-indigo-300 transition-colors">
-                            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
-                                <i class="fas fa-envelope-open-text text-indigo-600"></i>
-                            </div>
-                            <h4 class="font-semibold mb-2">Direct Mail Follow-Up</h4>
-                            <p class="text-sm text-gray-600">
-                                Automated call sequences timed with direct mail drops to maximize response rates.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Call to Action -->
-        <section class="py-16">
-            <div class="container px-4 mx-auto">
-                <div class="gradient-card p-6 lg:p-10 rounded-2xl relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full transform translate-x-1/4 -translate-y-1/2"></div>
-                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-white opacity-5 rounded-full transform -translate-x-1/4 translate-y-1/2"></div>
-                    
-                    <div class="relative z-10">
-                        <h2 class="text-3xl font-bold mb-4 text-white">Transform Your Call Management Today</h2>
-                        <p class="text-white opacity-90 mb-8 max-w-2xl">
-                            Join the top-performing realtors who have reclaimed their time and improved their conversion rates with our comprehensive Call Management System.
+                <!-- Step 2 -->
+                <div class="process-step flex mb-12">
+                    <div class="step-number">2</div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold mb-2">Content Creation</h3>
+                        <p class="text-gray-600 mb-4">
+                            Our team produces professional content assets tailored to your brand voice and optimized for each marketing channel.
                         </p>
-                        
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="#" class="inline-block px-6 py-3 bg-white text-indigo-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
-                                Schedule a Demo
-                            </a>
-                            <a href="#" class="inline-block px-6 py-3 bg-transparent border border-white text-white font-semibold rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors">
-                                View Full Proposal
-                            </a>
+                        <div class="card p-4 bg-white">
+                            <div class="grid grid-cols-3 gap-2">
+                                <div class="rounded-lg overflow-hidden shadow-sm">
+                                    <img src="https://via.placeholder.com/100x100/f5f5f5/a0a0a0?text=Photo" alt="Property Photo" class="w-full">
+                                </div>
+                                <div class="rounded-lg overflow-hidden shadow-sm">
+                                    <img src="https://via.placeholder.com/100x100/f5f5f5/a0a0a0?text=Video" alt="Video Content" class="w-full">
+                                </div>
+                                <div class="rounded-lg overflow-hidden shadow-sm">
+                                    <img src="https://via.placeholder.com/100x100/f5f5f5/a0a0a0?text=Social" alt="Social Post" class="w-full">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="process-step flex mb-12">
+                    <div class="step-number">3</div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold mb-2">Campaign Deployment</h3>
+                        <p class="text-gray-600 mb-4">
+                            We launch coordinated campaigns across multiple channels, scheduled for optimal engagement with your target audience.
+                        </p>
+                        <div class="card p-4 bg-white">
+                            <div class="flex space-x-2">
+                                <div class="w-1/4 text-center">
+                                    <i class="fab fa-facebook text-2xl text-blue-600 mb-1"></i>
+                                    <div class="text-xs">Facebook</div>
+                                </div>
+                                <div class="w-1/4 text-center">
+                                    <i class="fab fa-instagram text-2xl text-pink-600 mb-1"></i>
+                                    <div class="text-xs">Instagram</div>
+                                </div>
+                                <div class="w-1/4 text-center">
+                                    <i class="fab fa-google text-2xl text-yellow-500 mb-1"></i>
+                                    <div class="text-xs">Google</div>
+                                </div>
+                                <div class="w-1/4 text-center">
+                                    <i class="fas fa-envelope text-2xl text-purple-600 mb-1"></i>
+                                    <div class="text-xs">Email</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="process-step flex">
+                    <div class="step-number">4</div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold mb-2">Optimization & Reporting</h3>
+                        <p class="text-gray-600 mb-4">
+                            We continuously monitor performance, make real-time adjustments, and provide detailed analytics on campaign results.
+                        </p>
+                        <div class="card p-4 bg-white">
+                            <div class="h-12 w-full bg-gray-100 rounded-lg relative overflow-hidden mb-2">
+                                <div class="h-full gradient-bg" style="width: 75%"></div>
+                                <div class="absolute inset-0 flex items-center justify-center text-sm font-medium">
+                                    75% Improvement in Performance
+                                </div>
+                            </div>
+                            <div class="text-xs text-gray-500 text-center">
+                                Weekly performance reports with actionable insights
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <!-- Footer -->
-        <footer class="text-center text-gray-500 text-sm">
-            <p>© 2023 Main Street Opportunity. All rights reserved.</p>
-            <p class="mt-2">Transform your real estate business with our comprehensive suite of automation tools.</p>
-        </footer>
-    </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-10 md:py-16">
+        <div class="container px-4 mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title mx-auto">Real Results for Real Agents</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Stat Card 1 -->
+                <div class="stat-card card p-6 text-center">
+                    <div class="text-5xl font-bold gradient-text mb-2">247%</div>
+                    <div class="text-gray-600">Average increase in qualified leads</div>
+                </div>
+                
+                <!-- Stat Card 2 -->
+                <div class="stat-card card p-6 text-center">
+                    <div class="text-5xl font-bold gradient-text mb-2">38+</div>
+                    <div class="text-gray-600">Hours saved per week on marketing</div>
+                </div>
+                
+                <!-- Stat Card 3 -->
+                <div class="stat-card card p-6 text-center">
+                    <div class="text-5xl font-bold gradient-text mb-2">5.2x</div>
+                    <div class="text-gray-600">Return on marketing investment</div>
+                </div>
+                
+                <!-- Stat Card 4 -->
+                <div class="stat-card card p-6 text-center">
+                    <div class="text-5xl font-bold gradient-text mb-2">42%</div>
+                    <div class="text-gray-600">Reduction in cost per acquisition</div>
+                </div>
+            </div>
+            
+            <div class="mt-16">
+                <h3 class="text-2xl font-semibold mb-8 text-center">What Our Clients Say</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                                <img src="https://via.placeholder.com/56x56/f5f5f5/a0a0a0?text=JP" alt="Client" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Jennifer Parker</h4>
+                                <div class="text-sm text-gray-500">Luxury Home Specialist, Seattle</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "Main Street's marketing services transformed my business. I'm getting 3x the qualified leads while spending less time on marketing tasks. Their team understands the luxury market and creates content that resonates with high-end buyers."
+                        </p>
+                        <div class="mt-4 flex">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                                <img src="https://via.placeholder.com/56x56/f5f5f5/a0a0a0?text=MT" alt="Client" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Marcus Thompson</h4>
+                                <div class="text-sm text-gray-500">Team Leader, Chicago</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">
+                            "My team was spending 30+ hours weekly on marketing with mediocre results. Main Street took over and immediately increased our listing visibility by 215%. Their systems are efficient and their expertise is unmatched in the industry."
+                        </p>
+                        <div class="mt-4 flex">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section class="py-10 md:py-16 bg-gray-50">
+        <div class="container px-4 mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title mx-auto">Seamless Integration with Our Suite</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Integration 1 -->
+                <div class="integration-card card p-4 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-50">
+                        <i class="fas fa-phone-alt text-2xl gradient-text"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Call Management</h3>
+                    <p class="text-sm text-gray-600">
+                        Automated lead routing and follow-up from your marketing campaigns.
+                    </p>
+                </div>
+                
+                <!-- Integration 2 -->
+                <div class="integration-card card p-4 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-50">
+                        <i class="fas fa-calendar-check text-2xl gradient-text"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Scheduling</h3>
+                    <p class="text-sm text-gray-600">
+                        Instant appointment booking for interested leads from your marketing.
+                    </p>
+                </div>
+                
+                <!-- Integration 3 -->
+                <div class="integration-card card p-4 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-50">
+                        <i class="fas fa-users text-2xl gradient-text"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">CRM Management</h3>
+                    <p class="text-sm text-gray-600">
+                        Automatic lead import and segmentation from all marketing channels.
+                    </p>
+                </div>
+                
+                <!-- Integration 4 -->
+                <div class="integration-card card p-4 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-50">
+                        <i class="fas fa-cogs text-2xl gradient-text"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Workflow Automation</h3>
+                    <p class="text-sm text-gray-600">
+                        Trigger customized workflows based on marketing campaign responses.
+                    </p>
+                </div>
+                
+                <!-- Integration 5 -->
+                <div class="integration-card card p-4 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-50">
+                        <i class="fas fa-envelope text-2xl gradient-text"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Email Management</h3>
+                    <p class="text-sm text-gray-600">
+                        Connect marketing emails with automated follow-up sequences.
+                    </p>
+                </div>
+                
+                <!-- Integration 6 -->
+                <div class="integration-card card p-4 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-50">
+                        <i class="fas fa-comment-dots text-2xl gradient-text"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">SMS Marketing</h3>
+                    <p class="text-sm text-gray-600">
+                        Coordinate text campaigns with your overall marketing strategy.
+                    </p>
+                </div>
+                
+                <!-- Integration 7 -->
+                <div class="integration-card card p-4 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-50">
+                        <i class="fas fa-tasks text-2xl gradient-text"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Transaction Coordination</h3>
+                    <p class="text-sm text-gray-600">
+                        Smooth transition from marketing to transaction management.
+                    </p>
+                </div>
+                
+                <!-- Integration 8 -->
+                <div class="integration-card card p-4 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-50">
+                        <i class="fas fa-hashtag text-2xl gradient-text"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Social Media</h3>
+                    <p class="text-sm text-gray-600">
+                        Unified content strategy across all your marketing channels.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+                    Our marketing services are designed to work seamlessly with our complete suite of realtor tools, creating a unified system that eliminates redundancy and maximizes efficiency.
+                </p>
+                <button class="btn-primary px-8 py-3 rounded-lg font-medium">
+                    Explore Full Suite
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 relative overflow-hidden">
+        <div class="absolute inset-0 z-0 gradient-bg opacity-90"></div>
+        <div class="container px-4 mx-auto relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                    Ready to Transform Your Real Estate Marketing?
+                </h2>
+                <p class="text-white text-opacity-90 text-lg mb-8">
+                    Join the elite agents who have reclaimed their time, enhanced their brand presence, and significantly increased their business through our comprehensive marketing services.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-medium hover:bg-opacity-95 transition-colors shadow-lg">
+                        Schedule a Demo
+                    </button>
+                    <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition-colors">
+                        View Pricing
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-gray-900 text-white">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-col md:flex-row justify-between mb-8">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="text-2xl font-bold gradient-text mr-2">Main Street</div>
+                        <div class="text-lg font-semibold text-gray-400">Opportunity</div>
+                    </div>
+                    <p class="text-gray-400 max-w-xs">
+                        Empowering elite real estate professionals with comprehensive practice management solutions.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Services</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Marketing</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Transaction Coordination</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Call Management</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Scheduling</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Company</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Case Studies</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                        <div class="flex space-x-4 mb-4">
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fa8b8f9f898e93959489ba979b9394898e889f9f8e958ad4999597">[email&#160;protected]</a></p>
+                            <p class="text-gray-400">(800) 555-1234</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Main Street Opportunity. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Simple interaction enhancement
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add subtle hover effects to cards
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-5px)';
+                    card.style.boxShadow = '0 12px 40px 0 rgba(31, 38, 135, 0.15)';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = '';
+                    card.style.boxShadow = '';
+                });
+            });
+            
+            // Add active state to buttons
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('mousedown', () => {
+                    button.style.transform = 'scale(0.98)';
+                });
+                button.addEventListener('mouseup', () => {
+                    button.style.transform = '';
+                });
+                button.addEventListener('mouseleave', () => {
+                    button.style.transform = '';
+                });
+            });
+        });
+    </script>
 </body>
 </html>
