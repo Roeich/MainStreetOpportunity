@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Street Opportunity - AI for Small Businesses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- ______________ start header area ______________ -->
+    <!-- header -->
+    <header class="fixed top-0 z-50 bg-opacity-70 backdrop-blur-md bg-black w-full py-4">
+        <div class="container px-4 mx-auto">
+            <nav class="flex justify-between items-center ">
+                <div class="flex items-center">
+                    <a class="text-2xl font-bold text-white" href="index.html">
+                        <span class="gradient-text">Main</span>Street
+                    </a>
+                </div>
+                <ul class="navbar hidden lg:flex gap-x-4 items-center pl-20">
+                    <li class="nav_item sub_navbar_wrap">
+                        <a class="nav_link" href="solutions.html">Solutions</a>
+                        <ul class="sub_navbar">
+                            <li class="nav_item">
+                                <a class="nav_link" href="sms-marketing.html">SMS Marketing</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="digital-workforce.html">Digital Workforce</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="social-media-management.html">Social Media Management</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="call-management.html">Call Management</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="email-management.html">Email Management</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="crm-management.html">CRM Management</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="scheduling-system.html">Scheduling System </a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="workflow-automation.html">Workflow Automation</a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_link" href="transaction-coordination.html">Transaction Coordination</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav_item lg:hidden">
+                        <a class="cta-button" href="sms:+14809130641">
+                            <i class="fas fa-sms mr-2"></i>
+                            Text Alli 480-913-0641
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="hidden lg:block">
+                    <a class="cta-button" href="sms:+14809130641">
+                        <i class="fas fa-sms mr-2"></i>
+                        Text Alli 480-913-0641
+                    </a>
+                </div>
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-black z_1000 transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="flex justify-between py-4 px-6 md:px-12">
+            <div class="text-2xl font-bold text-white">
+                <span class="gradient-text">Main</span>Street
+            </div>
+            <button id="close-menu-button" class="text-white">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <ul class="navbar flex flex-col gap-x-6 items-center">
+            <li class="nav_item sub_navbar_wrap">
+                <div class="nav_link">Solutions</div>
+                <ul class="sub_navbar">
+                    <li class="nav_item">
+                        <a class="nav_link" href="sms-marketing.html">SMS Marketing</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="digital-workforce.html">Digital Workforce</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="social-media-management.html">Social Media Management</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="call-management.html">Call Management</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="email-management.html">Email Management</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="crm-management.html">CRM Management</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="scheduling-system.html">Scheduling System </a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="workflow-automation.html">Workflow Automation</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="transaction-coordination.html">Transaction Coordination</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav_item lg:hidden">
+                <a class="cta-button" href="sms:+14809130641">
+                    <i class="fas fa-sms mr-2"></i>
+                    Text Alli 480-913-0641
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- ______________ end header area ______________ -->
+
+    <!-- ______________ start main area ______________ -->
+    <main class="main">
+        <section class="pt-24 md:pt-32 pb-16">
+            <div class="container px-4 mx-auto">
+                <h1 class="text-4xl font-bold text-center mb-2 text-white">ELITE REALTOR SMS SEQUENCE</h1>
+                <p class="text-center text-gray-300 mb-8">High-Conversion Cold Outreach Strategy for $2K/Month Program</p>
+        
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-bold text-white mb-3"><i class="fas fa-bullseye text-red-500 mr-2"></i>Sequence Strategy</h3>
+                        <p class="text-gray-100 mb-3">This 7-message sequence uses psychological triggers to move cold prospects through curiosity, problem awareness, solution discovery, and decision-making phases.</p>
+                        <div class="text-sm text-gray-300">
+                            <p class="mb-1"><span class="font-medium">Target:</span> Realtors closing 15+ transactions annually</p>
+                            <p class="mb-1"><span class="font-medium">Timing:</span> Send between 10:00 AM - 2:00 PM local time</p>
+                            <p><span class="font-medium">Platform:</span> Optimized for iMessage on iOS devices</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-bold text-white mb-3"><i class="fas fa-chart-line text-green-500 mr-2"></i>Expected Metrics</h3>
+                        <p class="text-gray-100 mb-3">When implemented correctly, this sequence consistently delivers high engagement and conversion rates:</p>
+                        <div class="text-sm text-gray-300">
+                            <p class="mb-1"><span class="font-medium">Response Rate:</span> 35-42% initial engagement</p>
+                            <p class="mb-1"><span class="font-medium">Meeting Bookings:</span> 12-18% of contacted prospects</p>
+                            <p><span class="font-medium">Conversion:</span> 4-7% to paid program members</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-bold text-white mb-3"><i class="fas fa-user-edit text-purple-500 mr-2"></i>Personalization Fields</h3>
+                        <p class="text-gray-100 mb-3">Replace these variables in each message for maximum effectiveness:</p>
+                        <div class="text-sm text-gray-300">
+                            <p class="mb-1"><span class="font-medium">{FirstName}</span> - Prospect's first name</p>
+                            <p class="mb-1"><span class="font-medium">{City}</span> - Prospect's primary market</p>
+                            <p class="mb-1"><span class="font-medium">{RecentSale}</span> - Recent property they sold</p>
+                            <p><span class="font-medium">{CompetitorName}</span> - Top competitor in their market</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div>
+                        <div class="sms-container mb-8">
+                            <div class="sms-header py-3 px-4">
+                                <div class="flex justify-between items-center">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
+                                            <span class="text-gray-100 font-semibold">R</span>
+                                        </div>
+                                        <div class="ml-2">
+                                            <p class="font-semibold text-white">{FirstName}</p>
+                                            <p class="text-xs text-gray-400">iPhone Message</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sms-body p-4">
+                                <!-- Day 1: Initial Curiosity -->
+                                <div class="days-label">Day 1 - 10:30 AM</div>
+                                <div class="message sent">
+                                    Hey {FirstName}, just saw your listing on {RecentSale}. Quick question - are you still handling all your own transaction coordination and follow-ups? 🤔
+                                </div>
+                                <div class="message-note">
+                                    <strong>Strategy:</strong> Opens with recognition of their work, then introduces a pain point with a question that feels like a genuine inquiry rather than a sales pitch.
+                                    <div>
+                                        <span class="technique-badge fisher-badge">Jefferson Fisher: Recognition + Pain Point Question</span>
+                                    </div>
+                                </div>
+        
+                                <!-- Day 2: Pain Point Amplification -->
+                                <div class="days-label">Day 2 - 11:15 AM</div>
+                                <div class="message sent">
+                                    {FirstName}, I've been talking with several agents in {City} who are spending 35+ hours weekly on admin instead of with clients. I've developed a solution that's working for top producers. Worth a 5-min chat?
+                                </div>
+                                <div class="message-note">
+                                    <strong>Strategy:</strong> Establishes social proof, quantifies the pain point, hints at a solution, and makes an easy "yes" request.
+                                    <div>
+                                        <span class="technique-badge fisher-badge">Jefferson Fisher: Social Proof + Quantified Problem</span>
+                                        <span class="technique-badge split-badge">Split Difference: Small Ask Technique</span>
+                                    </div>
+                                </div>
+        
+                                <!-- Day 3: Value Proposition -->
+                                <div class="days-label">Day 3 - 1:20 PM</div>
+                                <div class="message received">
+                                    What kind of solution? I'm definitely spending too much time on paperwork instead of selling.
+                                </div>
+                                <div class="message sent">
+                                    My team handles ALL your backend: transaction coordination, call management, CRM, scheduling, emails, SMS follow-up & social media. Top agents pay $3,600/mo for these services separately, but our system is just $2K/mo with everything included. Just created a personalized demo for you: [link] ⭐
+                                </div>
+                                <div class="message-note">
+                                    <strong>Strategy:</strong> Comprehensive value proposition with price anchoring (showing $3,600 value, offered at $2,000) and personalized solution.
+                                    <div>
+                                        <span class="technique-badge fisher-badge">Jefferson Fisher: Comprehensive Solution</span>
+                                        <span class="technique-badge split-badge">Split Difference: Anchoring High First</span>
+                                    </div>
+                                </div>
+        
+                                <!-- Day 5: Social Proof -->
+                                <div class="days-label">Day 5 - 10:45 AM</div>
+                                <div class="message sent">
+                                    {FirstName}, thought you'd like to know Jennifer Wilson (also with HomeSmart) started with us last month and closed 3 extra deals while taking her first actual weekend off in 2 years. She said to tell you "it's like having a full admin team for less than hiring one person" 📊
+                                </div>
+                                <div class="message-note">
+                                    <strong>Strategy:</strong> Provides specific social proof from a peer at the same brokerage, with concrete results and direct quote.
+                                    <div>
+                                        <span class="technique-badge fisher-badge">Jefferson Fisher: Peer Group Validation</span>
+                                        <span class="technique-badge split-badge">Split Difference: Similar Situation Proof</span>
+                                    </div>
+                                </div>
+        
+                                <!-- Day 7: Exclusivity & Urgency -->
+                                <div class="days-label">Day 7 - 9:30 AM</div>
+                                <div class="message sent">
+                                    {FirstName}, heads up - we're taking on only 3 more agents in {City} this month (we limit by area to ensure quality). I've reserved a spot for you until Friday. If you want to claim it, I can get your personal system built out next week. Interested? 🔒
+                                </div>
+                                <div class="message-note">
+                                    <strong>Strategy:</strong> Creates scarcity (only 3 spots), exclusivity (reserved spot), and urgency (expires Friday) while offering immediate implementation.
+                                    <div>
+                                        <span class="technique-badge fisher-badge">Jefferson Fisher: Scarcity + Exclusivity</span>
+                                        <span class="technique-badge split-badge">Split Difference: Reservation Technique</span>
+                                    </div>
+                                </div>
+        
+                                <!-- Day 8: Decision Point -->
+                                <div class="days-label">Day 8 - 5:15 PM</div>
+                                <div class="message received">
+                                    I'm interested but need to think about the investment.
+                                </div>
+                                <div class="message sent">
+                                    I understand, {FirstName}. What if we did this - start with just our transaction coordination and SMS follow-up system for $1200/mo, then add the full suite once you see the results? Many agents make back the investment from their first additional closing. When's good for a quick call? 📲
+                                </div>
+                                <div class="message-note">
+                                    <strong>Strategy:</strong> Offers a concession with a partial solution at lower price point, emphasizes ROI, and asks for specific commitment.
+                                    <div>
+                                        <span class="technique-badge fisher-badge">Jefferson Fisher: ROI Emphasis</span>
+                                        <span class="technique-badge split-badge">Split Difference: Strategic Concession</span>
+                                    </div>
+                                </div>
+        
+                                <!-- Day 10: Final Opportunity -->
+                                <div class="days-label">Day 10 - 11:30 AM</div>
+                                <div class="message sent">
+                                    {FirstName}, final update: {CompetitorName} just took one of our {City} spots this morning. I'm holding your spot until 4pm today. If you're ready to reclaim 35+ hrs/week while growing your business, just reply "SAVE MY SPOT" and I'll send calendar link. If not, no worries - I'll release it to the waitlist. 👍
+                                </div>
+                                <div class="message-note">
+                                    <strong>Strategy:</strong> Final urgency trigger with competitor taking a spot, simple response mechanism, and friendly pressure-free close.
+                                    <div>
+                                        <span class="technique-badge fisher-badge">Jefferson Fisher: Competitor Trigger</span>
+                                        <span class="technique-badge split-badge">Split Difference: Specific Deadline + Easy Response</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-md mb-8 strategy-card">
+                            <h3 class="text-xl font-bold text-white mb-4">Jefferson Fisher Tactics Implemented</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="font-medium text-white">1. Pattern Interruption</p>
+                                    <p class="text-gray-300 text-sm">The opening message breaks patterns by focusing on a specific listing rather than introducing yourself, creating curiosity.</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-white">2. Peer-Group Identification</p>
+                                    <p class="text-gray-300 text-sm">Messages reference other successful agents in their market and brokerage, creating social proof within their exact peer group.</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-white">3. Specificity Principle</p>
+                                    <p class="text-gray-300 text-sm">Uses precise numbers (35+ hours, 3 spots, $3,600 vs $2,000) instead of generalizations, increasing credibility.</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-white">4. Status Elevation</p>
+                                    <p class="text-gray-300 text-sm">Positions the realtor as worthy of special treatment and reservations, appealing to their desire for status among peers.</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-white">5. Psychographic Targeting</p>
+                                    <p class="text-gray-300 text-sm">Messages are crafted for achievement-oriented, time-pressured professionals who value efficiency over penny-pinching.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-md mb-8 metrics-card">
+                            <h3 class="text-xl font-bold text-white mb-4">"Split the Difference" Techniques Applied</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="font-medium text-white">1. Anchoring</p>
+                                    <p class="text-gray-300 text-sm">Establishes the $3,600 market price first before revealing the $2,000 offer, making the latter seem like a significant value.</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-white">2. Calculated Concession</p>
+                                    <p class="text-gray-300 text-sm">Offers the partial solution at $1,200 when resistance occurs, making it feel like you're meeting them halfway.</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-white">3. Reservation Technique</p>
+                                    <p class="text-gray-300 text-sm">Creates the impression you've already given them something of value (the reserved spot) that they risk losing.</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-white">4. Small Yes Ladder</p>
+                                    <p class="text-gray-300 text-sm">Starts with tiny commitments (5-minute chat) before working toward the full program investment.</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-white">5. Competitor Trigger</p>
+                                    <p class="text-gray-300 text-sm">Introduces a named competitor taking a spot, activating loss aversion and competitive instincts.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-md personalization-card">
+                            <h3 class="text-xl font-bold text-white mb-4">Implementation Instructions</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="font-medium text-white">Pre-Sequence Research</p>
+                                    <p class="text-gray-300 text-sm">Before sending, research each realtor to identify: recent listings, transaction volume, years in business, brokerage, and top local competitors.</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-white">Response Handling</p>
+                                    <p class="text-gray-300 text-sm">Have prepared responses for common objections: "too expensive," "already have systems," "bad timing," or "need to speak with partner/broker."</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-white">Timing Adjustments</p>
+                                    <p class="text-gray-300 text-sm">If no response after Day 3, compress the remaining sequence to 1-2 day intervals instead of the standard spacing.</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-white">Messaging Platform</p>
+                                    <p class="text-gray-300 text-sm">Send through iMessage when possible (blue bubbles), as it shows higher perceived value than standard SMS (green bubbles).</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-white">Performance Tracking</p>
+                                    <p class="text-gray-300 text-sm">Use link shorteners with tracking for the demo link to measure engagement, and document response rates by message to optimize sequence over time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <h2 class="text-2xl font-bold text-white mb-4">Results You Can Expect</h2>
+                    <p class="text-gray-300 mb-8 max-w-3xl mx-auto">When implemented with proper personalization and follow-through, this sequence consistently delivers high-quality appointments with realtors who are pre-sold on the concept before your first conversation.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                        <div class="bg-white bg-opacity-10 p-5 rounded-lg shadow-md">
+                            <div class="text-4xl font-bold text-blue-600 mb-2">35%+</div>
+                            <p class="text-gray-100">Response Rate</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 p-5 rounded-lg shadow-md">
+                            <div class="text-4xl font-bold text-blue-600 mb-2">15%+</div>
+                            <p class="text-gray-100">Appointment Rate</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 p-5 rounded-lg shadow-md">
+                            <div class="text-4xl font-bold text-blue-600 mb-2">5%+</div>
+                            <p class="text-gray-100">Conversion Rate</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-16 bg-gradient-to-r from-blue-500 to-purple-600 text-white p-8 rounded-lg shadow-lg text-center">
+                    <h2 class="text-2xl font-bold mb-4">Ready to Implement This High-Converting SMS Sequence?</h2>
+                    <p class="text-lg mb-6">Main Street Opportunity's complete agent acquisition system includes this SMS sequence, the email campaign, and the interactive proposal - all customized for your business.</p>
+                    <p class="text-xl font-semibold">Contact us to get started!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ______________ end main area ______________ -->
+
+    <!-- ______________ start footer area ______________ -->
+    <footer class="py-12 bg-gray-900">
+        <div class="container px-4 mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-white mb-4">
+                        <span class="gradient-text">Main</span>Street
+                    </div>
+                    <p class="text-gray-400 mb-4">Smart marketing and digital workforce solutions designed by small business owners for small business owners.</p>
+                    <div class="flex space-x-4">
+                        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Solutions</h3>
+                    <ul class="space-y-2">
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="sms-marketing.html">SMS Marketing</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="digital-workforce.html">Digital Workforce</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="social-media-management.html">Social Media Management</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="lead-generation.html">Lead Generation</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="business-automation.html">Business Automation</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="about-us.html">About Us</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="case-studies.html">Case Studies</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="partners.html">Partners</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="blog.html">Blog</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a class="flex items-start" href="https://maps.app.goo.gl/S5toY5hjJduiY8mf9" target="_blank">
+                                <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-3"></i>
+                                <span class="text-gray-400">15201 N Cave Creek Rd, Suite B<br>Phoenix, AZ 85032</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center" href="tel:4809130641">
+                                <i class="fas fa-phone-alt text-blue-400 mr-3"></i>
+                                <span class="text-gray-400">480-913-0641</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center" href="mailto:info@mainstreetopportunity.com">
+                                <i class="fas fa-envelope text-blue-400 mr-3"></i>
+                                <span class="text-gray-400 break-all">info@mainstreetopportunity.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Main Street Opportunity. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a class="text-gray-400 hover:text-white text-sm transition-colors" href="privacy-policy.html">Privacy Policy</a>
+                    <a class="text-gray-400 hover:text-white text-sm transition-colors" href="terms-of-service.html">Terms of Service</a>
+                    <a class="text-gray-400 hover:text-white text-sm transition-colors" href="sitemap.html">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ______________ end header area ______________ -->
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.144.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

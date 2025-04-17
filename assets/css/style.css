@@ -1,4 +1,4 @@
-    :root {
+:root {
     --primary: #3a86ff;
     --secondary: #8338ec;
     --accent: #3bceac;
@@ -37,16 +37,24 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
     min-width: max-content;
     background-color: #090c10;
-    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+            transform: translateY(10px);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     opacity: 0;
     pointer-events: none;
 }
 
 .nav_item:hover>.sub_navbar {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 1;
     pointer-events: initial;
 }
@@ -82,8 +90,8 @@ body {
 }
 
 .gradient-text {
-    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--secondary)));
     background: -o-linear-gradient(left, var(--primary), var(--secondary));
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--secondary)));
     background: linear-gradient(90deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     background-clip: text;
@@ -204,8 +212,8 @@ body {
     position: absolute;
     width: 500px;
     height: 500px;
-    background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
     background: -o-linear-gradient(top, var(--primary), var(--secondary));
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
     background: linear-gradient(180deg, var(--primary), var(--secondary));
     -webkit-filter: blur(100px);
     filter: blur(100px);
@@ -248,8 +256,8 @@ body {
 
 .cta-button {
     display: inline-block;
-    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--secondary)));
     background: -o-linear-gradient(left, var(--primary), var(--secondary));
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--secondary)));
     background: linear-gradient(90deg, var(--primary), var(--secondary));
     color: white;
     font-weight: 600;
@@ -283,8 +291,8 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left top, right top, from(var(--secondary)), to(var(--primary)));
     background: -o-linear-gradient(left, var(--secondary), var(--primary));
+    background: -webkit-gradient(linear, left top, right top, from(var(--secondary)), to(var(--primary)));
     background: linear-gradient(90deg, var(--secondary), var(--primary));
     z-index: -1;
     -webkit-transition: opacity 0.3s ease;
@@ -364,8 +372,8 @@ body {
     top: 30px;
     width: 100%;
     height: 2px;
-    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--secondary)));
     background: -o-linear-gradient(left, var(--primary), var(--secondary));
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--secondary)));
     background: linear-gradient(90deg, var(--primary), var(--secondary));
     opacity: 0.3;
     z-index: 1;
@@ -455,8 +463,8 @@ body {
 .stats-number {
     font-size: 2.5rem;
     font-weight: 700;
-    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--secondary)));
     background: -o-linear-gradient(left, var(--primary), var(--secondary));
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--secondary)));
     background: linear-gradient(90deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     background-clip: text;
@@ -526,7 +534,9 @@ body {
     }
     .navbar {
         text-align: center;
-        align-items: initial;
+        -webkit-box-align: initial;
+            -ms-flex-align: initial;
+                align-items: initial;
     }
     .nav_link {
         padding: 0.5rem 1rem;
@@ -536,7 +546,9 @@ body {
         display: none;
         opacity: 1;
         max-width: 100%;
-        transform: none;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
     }
     .sub_navbar.show_subNavbar {
         display: block;
@@ -574,11 +586,13 @@ body {
 .sms-flow-item {
     position: relative;
     padding: 24px;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.05);
     ;
     border-radius: 12px;
-    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5);
     margin-bottom: 40px;
     z-index: 1;
 }
@@ -586,10 +600,14 @@ body {
 .sms-flow-connector {
     position: absolute;
     width: 2px;
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary)));
+    background: -o-linear-gradient(top, var(--primary), var(--secondary));
     background: linear-gradient(to bottom, var(--primary), var(--secondary));
     top: 100%;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     height: 40px;
 }
 
@@ -598,7 +616,9 @@ body {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -613,9 +633,15 @@ body {
     background: rgba(79, 70, 229, 0.1);
     border-radius: 12px;
     padding: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 64px;
     min-width: 64px;
     height: 64px;
@@ -625,38 +651,63 @@ body {
 /* ______________ start digital workforce marketing ______________ */
 
 .floating-element {
-    animation: float 6s ease-in-out infinite;
+    -webkit-animation: float 6s ease-in-out infinite;
+            animation: float 6s ease-in-out infinite;
 }
 
 .pulse-element {
-    animation: pulse 3s ease-in-out infinite;
+    -webkit-animation: pulse 3s ease-in-out infinite;
+            animation: pulse 3s ease-in-out infinite;
 }
 
 @keyframes float {
     0% {
-        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
     }
     50% {
-        transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
     }
     100% {
-        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 }
 
 @keyframes pulse {
     0% {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
     50% {
-        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
     }
     100% {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 }
 
 .timeline-container {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(147, 51, 234, 0.1)), to(rgba(79, 70, 229, 0.1)));
+    background: -o-linear-gradient(left, rgba(147, 51, 234, 0.1) 0%, rgba(79, 70, 229, 0.1) 100%);
     background: linear-gradient(90deg, rgba(147, 51, 234, 0.1) 0%, rgba(79, 70, 229, 0.1) 100%);
 }
 
@@ -664,6 +715,8 @@ body {
     position: absolute;
     top: 12px;
     height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(#4f46e5), to(#7c3aed));
+    background: -o-linear-gradient(left, #4f46e5, #7c3aed);
     background: linear-gradient(90deg, #4f46e5, #7c3aed);
     z-index: 1;
 }
@@ -681,11 +734,24 @@ body {
 }
 
 .timeline-dot {
+    background: -o-linear-gradient(315deg, #4f46e5 0%, #7c3aed 100%);
     background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
 }
 
 .hub-connection {
-    animation: connection 2s infinite alternate;
+    -webkit-animation: connection 2s infinite alternate;
+            animation: connection 2s infinite alternate;
+}
+
+@-webkit-keyframes connection {
+    from {
+        opacity: 0.5;
+        stroke-dashoffset: 100;
+    }
+    to {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
 }
 
 @keyframes connection {
@@ -700,6 +766,7 @@ body {
 }
 
 .benefit-icon {
+    background: -o-linear-gradient(315deg, #4f46e5 0%, #7c3aed 100%);
     background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
 }
 
@@ -715,9 +782,15 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: white;
     font-size: 24px;
     margin-bottom: 10px;
@@ -728,6 +801,7 @@ body {
 }
 
 .instagram-bg {
+    background: -o-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
@@ -748,11 +822,23 @@ body {
 }
 
 .float-animation {
-    animation: float 4s ease-in-out infinite;
+    -webkit-animation: float 4s ease-in-out infinite;
+            animation: float 4s ease-in-out infinite;
 }
 
 .pulse-animation {
-    animation: pulse2 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    -webkit-animation: pulse2 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse2 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@-webkit-keyframes pulse2 {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
 }
 
 @keyframes pulse2 {
@@ -769,10 +855,19 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     color: white;
     font-weight: 600;
     text-align: center;
@@ -794,7 +889,9 @@ body {
     position: absolute;
     top: 47px;
     z-index: -1;
-    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
 }
 
 .strategy-map-item:last-of-type::before {
@@ -802,24 +899,31 @@ body {
 }
 
 .step-1 {
+    background: -o-linear-gradient(315deg, #4F46E5 0%, #7C3AED 100%);
     background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
 }
 
 .step-2 {
+    background: -o-linear-gradient(315deg, #3B82F6 0%, #2563EB 100%);
     background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
 }
 
 .step-3 {
+    background: -o-linear-gradient(315deg, #8B5CF6 0%, #6366F1 100%);
     background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)
 }
 
 .step-4 {
+    background: -o-linear-gradient(315deg, #EC4899 0%, #D946EF 100%);
     background: linear-gradient(135deg, #EC4899 0%, #D946EF 100%);
 }
 
 @media(max-width:1023.98px) {
     .strategy-map {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 1.5rem;
     }
     .strategy-map-item {
@@ -848,6 +952,8 @@ body {
     position: absolute;
     top: 12px;
     height: 3px;
+    background: -webkit-gradient(linear, left top, right top, from(#4f46e5), to(#7c3aed));
+    background: -o-linear-gradient(left, #4f46e5, #7c3aed);
     background: linear-gradient(90deg, #4f46e5, #7c3aed);
     z-index: 1;
 }
@@ -856,20 +962,27 @@ body {
     width: 24px;
     height: 24px;
     border-radius: 50%;
+    background: -o-linear-gradient(45deg, #4f46e5, #7c3aed);
     background: linear-gradient(45deg, #4f46e5, #7c3aed);
     position: relative;
     z-index: 2;
 }
 
 .benefit-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
+    -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .benefit-card {
     background: rgba(255, 255, 255, 0.10);
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     border-left: 4px solid #4f46e5;
 }
@@ -880,11 +993,16 @@ body {
     background: rgba(79, 70, 229, 0.1);
     margin-left: auto;
     margin-right: auto;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .integration-card:hover .integration-icon {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    background: -o-linear-gradient(315deg, #4f46e5, #7c3aed);
     background: linear-gradient(135deg, #4f46e5, #7c3aed);
     color: white;
 }
@@ -898,13 +1016,20 @@ body {
 /* ______________ start email management ______________ */
 
 .feature-icon {
+    background: -o-linear-gradient(315deg, rgba(79, 70, 229, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
     background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
     border-radius: 12px;
     width: 54px;
     height: 54px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 24px;
     color: #4f46e5;
     margin-bottom: 16px;
@@ -912,6 +1037,8 @@ body {
 
 .journey-line {
     height: 4px;
+    background: -webkit-gradient(linear, left top, right top, from(#4f46e5), color-stop(50%, #7c3aed), to(#3b82f6));
+    background: -o-linear-gradient(left, #4f46e5 0%, #7c3aed 50%, #3b82f6 100%);
     background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 50%, #3b82f6 100%);
     position: relative;
     margin: 2rem 5rem;
@@ -925,14 +1052,19 @@ body {
     background: #4f46e5;
     position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.2);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.2);
+            box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.2);
 }
 
 .journey-label {
     position: absolute;
     top: 24px;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     font-size: 0.875rem;
     font-weight: 500;
     white-space: nowrap;
@@ -941,7 +1073,9 @@ body {
 .journey-description {
     position: absolute;
     top: -40px;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     font-size: 0.875rem;
     white-space: nowrap;
     color: #a5cbff;
@@ -957,22 +1091,30 @@ body {
     .journey-line {
         margin: 0;
         text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 16px;
     }
     .journey-line,
     .journey-point {
         height: auto;
         width: 100%;
-        box-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
         background: none;
     }
     .journey-point,
     .journey-description,
     .journey-label {
         position: static;
-        transform: none;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
     }
 }
 /* ______________ end email management ______________ */
@@ -980,6 +1122,8 @@ body {
 
 .step-connector {
     height: 1px;
+    background: -webkit-gradient(linear, left top, right top, from(#4f46e5), to(#7c3aed));
+    background: -o-linear-gradient(left, #4f46e5, #7c3aed);
     background: linear-gradient(90deg, #4f46e5, #7c3aed);
     margin-bottom: 24px;
 }
@@ -998,9 +1142,15 @@ body {
     height: 40px;
     min-height: 40px;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-weight: bold;
     color: white;
     margin-right: 15px;
@@ -1013,6 +1163,8 @@ body {
     left: 19px;
     width: 2px;
     height: calc(100% - 50px);
+    background: -webkit-gradient(linear, left top, left bottom, from(#4f46e5), to(#7c3aed));
+    background: -o-linear-gradient(top, #4f46e5, #7c3aed);
     background: linear-gradient(to bottom, #4f46e5, #7c3aed);
 }
 
@@ -1022,7 +1174,8 @@ body {
     border-radius: 0 8px 8px 0;
     padding: 15px;
     margin-bottom: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     overflow: hidden;
 }
 /* ______________ end crm management system ______________ */
@@ -1032,20 +1185,29 @@ body {
     width: 64px;
     height: 64px;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -o-linear-gradient(315deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
     margin-bottom: 1rem;
 }
 
 .gradient-card {
+    background: -o-linear-gradient(315deg, #4338CA, #6366F1);
     background: linear-gradient(135deg, #4338CA, #6366F1);
     color: white;
 }
 
 .pulse-flow {
-    animation: pulseFlow 2s infinite;
+    -webkit-animation: pulseFlow 2s infinite;
+            animation: pulseFlow 2s infinite;
 }
 
 .flow-arrow {
@@ -1074,19 +1236,120 @@ body {
     display: block;
     width: 80px;
     height: 4px;
+    background: -webkit-gradient(linear, left top, right top, from(#4338CA), to(#6366F1));
+    background: -o-linear-gradient(left, #4338CA, #6366F1);
     background: linear-gradient(90deg, #4338CA, #6366F1);
     margin-top: 16px;
     border-radius: 2px;
 }
+
 .section-title.text-center::after {
     margin-left: auto;
     margin-right: auto;
 }
+
 .process-step .step-number {
     width: 32px;
     min-width: 32px;
     height: 32px;
     min-height: 32px;
     font-size: 16px;
-  }
+}
 /* ______________ end services / solutions page ______________ */
+/* ______________ start elite realtor sms sequence page ______________ */
+
+.sms-container {
+    max-width: 100%;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.sms-header {
+    background-color: #272727;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.sms-body {
+    background-color: #505050;
+    min-height: 500px;
+    overflow-y: auto;
+}
+
+.message {
+    font-size: 12px;
+    max-width: 70%;
+    padding: 10px 14px;
+    margin: 8px;
+    border-radius: 20px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.sent {
+    background-color: #0b93f6;
+    color: white;
+    margin-left: auto;
+    border-bottom-right-radius: 5px;
+}
+
+.received {
+    background-color: #e5e5ea;
+    color: black;
+    margin-right: auto;
+    border-bottom-left-radius: 5px;
+}
+
+.message-note {
+    font-size: 0.85rem;
+    color: #fff;
+    margin: 15px 0;
+    background-color: #fffde730;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #ffd54f;
+}
+
+.days-label {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #8e8e93;
+    margin: 15px 0 5px;
+}
+
+.strategy-card {
+    border-left: 4px solid #3b82f6;
+    background-color: #f0f9ff3b;
+}
+
+.metrics-card {
+    border-left: 4px solid #10b981;
+    background-color: #f0f9ff3b;
+}
+
+.personalization-card {
+    border-left: 4px solid #8b5cf6;
+    background-color: #f0f9ff3b;
+}
+
+.technique-badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.fisher-badge {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.split-badge {
+    background-color: #e0e7ff;
+    color: #4338ca;
+}
+/* ______________ end elite realtor sms sequence page ______________ */
