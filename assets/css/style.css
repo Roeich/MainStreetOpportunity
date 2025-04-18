@@ -42,8 +42,8 @@ body {
     min-width: max-content;
     background-color: #090c10;
     -webkit-transform: translateY(10px);
-        -ms-transform: translateY(10px);
-            transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -53,8 +53,8 @@ body {
 
 .nav_item:hover>.sub_navbar {
     -webkit-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-            transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
     opacity: 1;
     pointer-events: initial;
 }
@@ -84,6 +84,7 @@ body {
     max-width: 100vw;
     overflow: hidden;
 }
+
 
 /* .typing_text_container {
     min-height: 4em;
@@ -522,6 +523,7 @@ body {
     fill: rgba(255, 255, 255, 0.03);
 }
 
+
 /* @media (max-width: 1279.98px) {
     .typing_text_container {
         min-height: 5em;
@@ -535,8 +537,8 @@ body {
     .navbar {
         text-align: center;
         -webkit-box-align: initial;
-            -ms-flex-align: initial;
-                align-items: initial;
+        -ms-flex-align: initial;
+        align-items: initial;
     }
     .nav_link {
         padding: 0.5rem 1rem;
@@ -547,8 +549,8 @@ body {
         opacity: 1;
         max-width: 100%;
         -webkit-transform: none;
-            -ms-transform: none;
-                transform: none;
+        -ms-transform: none;
+        transform: none;
     }
     .sub_navbar.show_subNavbar {
         display: block;
@@ -570,6 +572,7 @@ body {
     }
 }
 
+
 /* @media(max-width:575.98px) {
     .typing_text_container {
         min-height: 5em;
@@ -581,23 +584,26 @@ body {
         max-width: 1320px;
     }
 }
-@media(min-width:2000px){
-    .min_h_screen{
+
+@media(min-width:2000px) {
+    .min_h_screen {
         min-height: max-content;
     }
 }
+
+
 /* ______________ start sms marketing ______________ */
 
 .sms-flow-item {
     position: relative;
     padding: 24px;
     -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.05);
     ;
     border-radius: 12px;
     -webkit-box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5);
-            box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5);
     margin-bottom: 40px;
     z-index: 1;
 }
@@ -611,8 +617,8 @@ body {
     top: 100%;
     left: 50%;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     height: 40px;
 }
 
@@ -622,8 +628,8 @@ body {
     bottom: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -642,71 +648,75 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 64px;
     min-width: 64px;
     height: 64px;
     margin-bottom: 12px;
 }
+
+
 /* ______________ end sms marketing ______________ */
+
+
 /* ______________ start digital workforce marketing ______________ */
 
 .floating-element {
     -webkit-animation: float 6s ease-in-out infinite;
-            animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
 }
 
 .pulse-element {
     -webkit-animation: pulse 3s ease-in-out infinite;
-            animation: pulse 3s ease-in-out infinite;
+    animation: pulse 3s ease-in-out infinite;
 }
 
 @keyframes float {
     0% {
         -webkit-transform: translateY(0px);
-                transform: translateY(0px);
+        transform: translateY(0px);
     }
     50% {
         -webkit-transform: translateY(-15px);
-                transform: translateY(-15px);
+        transform: translateY(-15px);
     }
     100% {
         -webkit-transform: translateY(0px);
-                transform: translateY(0px);
+        transform: translateY(0px);
     }
 }
 
 @-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
     50% {
         -webkit-transform: scale(1.05);
-                transform: scale(1.05);
+        transform: scale(1.05);
     }
     100% {
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
 }
 
 @keyframes pulse {
     0% {
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
     50% {
         -webkit-transform: scale(1.05);
-                transform: scale(1.05);
+        transform: scale(1.05);
     }
     100% {
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -745,7 +755,7 @@ body {
 
 .hub-connection {
     -webkit-animation: connection 2s infinite alternate;
-            animation: connection 2s infinite alternate;
+    animation: connection 2s infinite alternate;
 }
 
 @-webkit-keyframes connection {
@@ -780,7 +790,11 @@ body {
         display: block !important;
     }
 }
+
+
 /* ______________ end digital workforce marketing ______________ */
+
+
 /* ______________ start social media management ______________ */
 
 .platform-icon {
@@ -791,11 +805,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     color: white;
     font-size: 24px;
     margin-bottom: 10px;
@@ -828,12 +842,12 @@ body {
 
 .float-animation {
     -webkit-animation: float 4s ease-in-out infinite;
-            animation: float 4s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
 }
 
 .pulse-animation {
     -webkit-animation: pulse2 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-            animation: pulse2 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse2 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @-webkit-keyframes pulse2 {
@@ -864,15 +878,15 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     color: white;
     font-weight: 600;
     text-align: center;
@@ -895,8 +909,8 @@ body {
     top: 47px;
     z-index: -1;
     -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-            transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
 }
 
 .strategy-map-item:last-of-type::before {
@@ -927,8 +941,8 @@ body {
     .strategy-map {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         gap: 1.5rem;
     }
     .strategy-map-item {
@@ -950,7 +964,11 @@ body {
         font-size: 16px;
     }
 }
+
+
 /* ______________ end social media management ______________ */
+
+
 /* ______________ start transaction coordination management ______________ */
 
 .timeline-line {
@@ -975,17 +993,17 @@ body {
 
 .benefit-card:hover {
     -webkit-transform: scale(1.02);
-        -ms-transform: scale(1.02);
-            transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
     -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .benefit-card {
     background: rgba(255, 255, 255, 0.10);
     border-radius: 12px;
     -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -1005,8 +1023,8 @@ body {
 
 .integration-card:hover .integration-icon {
     -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
     background: -o-linear-gradient(315deg, #4f46e5, #7c3aed);
     background: linear-gradient(135deg, #4f46e5, #7c3aed);
     color: white;
@@ -1017,7 +1035,11 @@ body {
         display: none;
     }
 }
+
+
 /* ______________ end transaction coordination management ______________ */
+
+
 /* ______________ start email management ______________ */
 
 .feature-icon {
@@ -1030,11 +1052,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     font-size: 24px;
     color: #4f46e5;
     margin-bottom: 16px;
@@ -1058,18 +1080,18 @@ body {
     position: absolute;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     -webkit-box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.2);
-            box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.2);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.2);
 }
 
 .journey-label {
     position: absolute;
     top: 24px;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     font-size: 0.875rem;
     font-weight: 500;
     white-space: nowrap;
@@ -1079,8 +1101,8 @@ body {
     position: absolute;
     top: -40px;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     font-size: 0.875rem;
     white-space: nowrap;
     color: #a5cbff;
@@ -1101,8 +1123,8 @@ body {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         gap: 16px;
     }
     .journey-line,
@@ -1110,7 +1132,7 @@ body {
         height: auto;
         width: 100%;
         -webkit-box-shadow: none;
-                box-shadow: none;
+        box-shadow: none;
         background: none;
     }
     .journey-point,
@@ -1118,11 +1140,15 @@ body {
     .journey-label {
         position: static;
         -webkit-transform: none;
-            -ms-transform: none;
-                transform: none;
+        -ms-transform: none;
+        transform: none;
     }
 }
+
+
 /* ______________ end email management ______________ */
+
+
 /* ______________ start scheduling system ______________ */
 
 .step-connector {
@@ -1132,7 +1158,11 @@ body {
     background: linear-gradient(90deg, #4f46e5, #7c3aed);
     margin-bottom: 24px;
 }
+
+
 /* ______________ end scheduling system ______________ */
+
+
 /* ______________ start crm management system ______________ */
 
 .pipeline-step {
@@ -1151,11 +1181,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     font-weight: bold;
     color: white;
     margin-right: 15px;
@@ -1180,10 +1210,14 @@ body {
     padding: 15px;
     margin-bottom: 15px;
     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     overflow: hidden;
 }
+
+
 /* ______________ end crm management system ______________ */
+
+
 /* ______________ start call management system ______________ */
 
 .icon-circle {
@@ -1194,11 +1228,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     background: -o-linear-gradient(315deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
     margin-bottom: 1rem;
@@ -1212,7 +1246,7 @@ body {
 
 .pulse-flow {
     -webkit-animation: pulseFlow 2s infinite;
-            animation: pulseFlow 2s infinite;
+    animation: pulseFlow 2s infinite;
 }
 
 .flow-arrow {
@@ -1233,7 +1267,11 @@ body {
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
 }
+
+
 /* ______________ end call management system ______________ */
+
+
 /* ______________ start services / solutions page ______________ */
 
 .section-title::after {
@@ -1260,7 +1298,11 @@ body {
     min-height: 32px;
     font-size: 16px;
 }
+
+
 /* ______________ end services / solutions page ______________ */
+
+
 /* ______________ start elite realtor sms sequence page ______________ */
 
 .sms-container {
@@ -1268,7 +1310,7 @@ body {
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.15);
     -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     margin: 0 auto;
 }
@@ -1357,4 +1399,24 @@ body {
     background-color: #e0e7ff;
     color: #4338ca;
 }
+
+
 /* ______________ end elite realtor sms sequence page ______________ */
+
+.responsive_video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.responsive_video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
